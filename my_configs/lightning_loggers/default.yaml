@@ -1,0 +1,3 @@
+defaults:
+  - csv: default.yaml
+  - tensorboard: default.yaml

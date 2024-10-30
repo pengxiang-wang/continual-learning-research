@@ -1,0 +1,4 @@
+_target_: clarena.backbones.MLP
+input_dim: 784
+hidden_dims: [256, 100]
+output_dim: 64

@@ -1,0 +1,20 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+cl_paradigm: CIL
+num_tasks: 10
+
+defaults:
+  - /cl_dataset: permuted_mnist.yaml
+  - /backbone: mlp.yaml
+  - /cl_algorithm: finetuning.yaml
+  - /optimizer: sgd.yaml
+  - /trainer: cpu.yaml
+  - /lightning_loggers: default.yaml
+  - /callbacks: default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+test: True
+output_dir_name: example
+

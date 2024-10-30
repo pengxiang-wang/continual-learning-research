@@ -1,0 +1,11 @@
+# general things to ignore
+*.py[cod]
+__pycache__/
+*~
+venv/
+
+data/
+outputs/
+
+# others
+.DS_Store
