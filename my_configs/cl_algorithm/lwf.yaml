@@ -1,0 +1,3 @@
+_target_: clarena.cl_algorithms.LwF
+distillation_reg_factor: 0.1
+distillation_reg_temparture: 2.0

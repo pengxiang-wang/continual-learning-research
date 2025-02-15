@@ -1,7 +1,7 @@
-_target_: my_modules.cl_datasets.MyPermutedMNIST
+_target_: clarena.cl_datasets.PermutedMNIST
 root: data/MNIST
-num_tasks: 10
+num_tasks: 20
 validation_percentage: 0.1
 batch_size: 128
-num_workers: 10
+num_workers: 8
 permutation_mode: first_channel_only

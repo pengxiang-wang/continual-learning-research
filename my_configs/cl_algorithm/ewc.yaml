@@ -1,0 +1,3 @@
+_target_: clarena.cl_algorithms.EWC
+parameter_change_reg_factor: 2500.0
+parameter_change_reg_p_norm: 2.0
