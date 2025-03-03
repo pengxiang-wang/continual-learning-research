@@ -1,6 +1,0 @@
-_target_: clarena.callbacks.HATMetricsCallback
-test_mask_plot_dir: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/mask/test/
-test_cumulative_mask_plot_dir: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/mask/test_cumulative/
-if_plot_train_mask: true
-train_mask_plot_dir: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/mask/train/
-plot_train_mask_every_n_steps: 50

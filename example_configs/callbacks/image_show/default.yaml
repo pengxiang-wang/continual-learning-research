@@ -1,4 +1,0 @@
-_target_: clarena.callbacks.ImageShowCallback
-save: True
-save_dir: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/samples/
-log_to_tensorboard: True

@@ -4,5 +4,4 @@ num_tasks: 10
 validation_percentage: 0.1
 batch_size: 128
 num_workers: 8
-permutation_seeds: [1,2,3,4,5,6,7,8,9,10]
 permutation_mode: first_channel_only

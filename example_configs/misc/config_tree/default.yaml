@@ -1,0 +1,15 @@
+print: True
+save: True
+save_path: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/config_tree.log
+style: dim
+guide_style: dim
+fields_order: 
+  - cl_algorithm
+  - cl_dataset
+  - backbone
+  - optimizer
+  - trainer
+  - callbacks
+  - lightning_loggers
+  - hydra
+  - misc

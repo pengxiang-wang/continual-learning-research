@@ -1,7 +1,0 @@
-defaults:
-  - pylogger: default.yaml
-  - metrics: default.yaml
-  - image_show: default.yaml
-  - cl_rich_progress_bar: default.yaml
-  - hat_metrics: default.yaml
-

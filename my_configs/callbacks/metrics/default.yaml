@@ -1,9 +1,0 @@
-_target_: clarena.callbacks.MetricsCallback
-acc_csv_path: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/acc.csv
-loss_cls_csv_path: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/loss_cls.csv
-if_plot_test_acc: true
-if_plot_test_loss_cls: true
-ave_acc_plot_path: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/ave_acc.png
-acc_matrix_plot_path: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/acc_matrix.png
-ave_loss_cls_plot_path: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/ave_loss_cls.png
-loss_cls_matrix_plot_path: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}/loss_cls_matrix.png
