@@ -16,11 +16,11 @@ defaults:
   - /hydra: default.yaml
   - /misc: default.yaml
 
-trainer: 
-  max_epochs: 20
-
 optimizer:
   lr: 0.001
+
+trainer: 
+  max_epochs: 20
 
 test: True
 output_dir_name: til_scifar100_hat
