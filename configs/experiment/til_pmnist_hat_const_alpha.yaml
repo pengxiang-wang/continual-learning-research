@@ -16,6 +16,9 @@ defaults:
   - /hydra: default.yaml
   - /misc: default.yaml
 
+optimizer:
+  lr: 0.001
+  
 trainer: 
   max_epochs: 2
 
