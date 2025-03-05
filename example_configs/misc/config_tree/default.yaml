@@ -8,6 +8,7 @@ fields_order:
   - cl_dataset
   - backbone
   - optimizer
+  - lr_scheduler
   - trainer
   - callbacks
   - lightning_loggers

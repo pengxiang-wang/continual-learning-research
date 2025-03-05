@@ -10,6 +10,7 @@ defaults:
   - /backbone: hat_mask_mlp.yaml
   - /cl_algorithm: hat_random.yaml
   - /optimizer: adam.yaml
+  - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: mps.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: hat.yaml
