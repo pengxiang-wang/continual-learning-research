@@ -10,6 +10,7 @@ defaults:
   - /backbone: resnet18.yaml
   - /cl_algorithm: ewc.yaml
   - /optimizer: adam.yaml
+  - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: mps.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: default.yaml

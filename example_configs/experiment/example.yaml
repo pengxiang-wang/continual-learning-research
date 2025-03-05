@@ -10,6 +10,7 @@ defaults:
   - /backbone: mlp.yaml
   - /cl_algorithm: finetuning.yaml
   - /optimizer: sgd.yaml
+  - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: default.yaml
