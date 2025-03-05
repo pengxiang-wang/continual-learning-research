@@ -6,7 +6,9 @@ venv/
 
 data/
 outputs/
+outputs_critical/
 outputs_to_be_saved/
+
 
 # others
 .DS_Store
