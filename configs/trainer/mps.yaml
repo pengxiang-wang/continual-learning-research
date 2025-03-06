@@ -4,6 +4,8 @@ default_root_dir: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}
 
 log_every_n_steps: 50
 
+enable_checkpointing: False
+
 accelerator: mps
 devices: 1
 
