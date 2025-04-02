@@ -26,6 +26,6 @@ trainer:
 
   
 test: True
-output_dir_name: til_scifar100_adahat
+output_dir: outputs/til_scifar100_adahat/${now:%Y-%m-%d_%H-%M-%S}
 
 

@@ -24,6 +24,6 @@ trainer:
   max_epochs: 2
 
 test: True
-output_dir_name: til_pmnist_adahat_no_reg
+output_dir: outputs/til_pmnist_adahat_no_reg/${now:%Y-%m-%d_%H-%M-%S}
 
 
