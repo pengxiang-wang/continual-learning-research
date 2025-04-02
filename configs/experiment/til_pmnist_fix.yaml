@@ -21,6 +21,6 @@ trainer:
   max_epochs: 2
 
 test: True
-output_dir_name: til_pmnist_fix
+output_dir: outputs/til_pmnist_fix/${now:%Y-%m-%d_%H-%M-%S}
 
 

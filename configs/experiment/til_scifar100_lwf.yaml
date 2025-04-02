@@ -25,6 +25,6 @@ trainer:
   max_epochs: 20
 
 test: True
-output_dir_name: til_scifar100_lwf
+output_dir: outputs/til_scifar100_lwf/${now:%Y-%m-%d_%H-%M-%S}
 
 

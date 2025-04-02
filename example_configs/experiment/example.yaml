@@ -18,7 +18,7 @@ defaults:
   - /misc: default.yaml
 
 test: True
-output_dir_name: example
+output_dir: outputs/example/${now:%Y-%m-%d_%H-%M-%S}
 
 # overrides
 trainer:

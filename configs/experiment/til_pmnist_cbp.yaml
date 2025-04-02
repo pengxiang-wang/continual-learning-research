@@ -21,4 +21,4 @@ trainer:
   max_epochs: 2
 
 test: True
-output_dir_name: til_pmnist_cbp
+output_dir: outputs/til_pmnist_cbp/${now:%Y-%m-%d_%H-%M-%S}

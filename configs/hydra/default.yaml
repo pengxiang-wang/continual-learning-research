@@ -17,5 +17,5 @@ job_logging:
 
 
 run:
-  dir: ./outputs/${output_dir_name}/${now:%Y-%m-%d_%H-%M-%S}
+  dir: ${output_dir}
 
