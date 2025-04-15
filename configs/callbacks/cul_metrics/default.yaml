@@ -6,4 +6,4 @@ test_acc_matrix_plot_name: acc_matrix.png
 test_loss_cls_matrix_plot_name: loss_cls_matrix.png
 test_ave_acc_excluding_unlearned_plot_name: ave_acc.png
 test_ave_loss_cls_excluding_unlearned_plot_name: ave_loss_cls.png
-unlearning_test_after_task_ids: [1]
+unlearning_test_after_task_ids: [2]

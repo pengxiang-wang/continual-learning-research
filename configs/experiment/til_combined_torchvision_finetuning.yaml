@@ -6,12 +6,12 @@ num_tasks: 20
 global_seed: 1
 
 defaults:
-  - /cl_dataset: split_cub2002011.yaml
+  - /cl_dataset: combined_torchvision.yaml
   - /backbone: resnet18.yaml
   - /cl_algorithm: finetuning.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: mps.yaml
+  - /trainer: mps_20_tasks.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: default.yaml
   - /hydra: default.yaml
@@ -19,12 +19,9 @@ defaults:
 
 optimizer:
   lr: 0.001
-  
-trainer: 
-  max_epochs: 50
 
 
 test: True
-output_dir: outputs/til_scub2002011_finetuning/${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/til_combined_torchvision_finetuning/${now:%Y-%m-%d_%H-%M-%S}
 
 

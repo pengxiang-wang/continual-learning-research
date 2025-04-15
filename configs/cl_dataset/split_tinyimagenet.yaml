@@ -1,6 +1,5 @@
 _target_: clarena.cl_datasets.SplitTinyImageNet
 root: data/TinyImageNet
-num_tasks: 20
 class_split: [
   [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
   [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
@@ -25,3 +24,26 @@ class_split: [
 ]
 validation_percentage: 0.1
 batch_size: 64
+custom_transforms:
+  _target_: torchvision.transforms.Compose
+  transforms:
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+      p: 0.5
+    - _target_: torchvision.transforms.RandomResizedCrop
+      size: 64
+      scale: [0.8, 1.0]
+      ratio: [0.9, 1.1]
+    - _target_: torchvision.transforms.RandomRotation
+      degrees: 15
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
+    - _target_: torchvision.transforms.RandomAdjustSharpness
+      sharpness_factor: 2
+      p: 0.3
+    - _target_: torchvision.transforms.RandomErasing
+      p: 0.5
+      scale: [0.02, 0.1]
+      value: 0
+      inplace: False

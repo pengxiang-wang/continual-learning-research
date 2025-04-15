@@ -1,0 +1,26 @@
+_target_: clarena.cl_datasets.CombinedTorchvision
+datasets: 
+  - torchvision.datasets.MNIST
+  - torchvision.datasets.CIFAR10
+  - torchvision.datasets.CIFAR100
+root: 
+  - data/MNIST
+  - data/CIFAR10
+  - data/CIFAR100
+num_classes:
+  - 10
+  - 10
+  - 100
+resize: 
+  - (32, 32)
+  - null
+  - null
+repeat_channels:
+  - 3
+  - null
+  - null
+# custom_transforms:
+#   - _target_: clarena.utils.transforms.repeat_channels
+#     num_channels: 3
+validation_percentage: 0.1
+batch_size: 64
