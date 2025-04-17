@@ -19,8 +19,6 @@ repeat_channels:
   - 3
   - null
   - null
-# custom_transforms:
-#   - _target_: clarena.utils.transforms.repeat_channels
-#     num_channels: 3
+  
 validation_percentage: 0.1
 batch_size: 64

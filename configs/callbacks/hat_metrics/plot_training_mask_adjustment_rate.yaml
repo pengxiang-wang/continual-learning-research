@@ -1,0 +1,7 @@
+_target_: clarena.callbacks.HATMetricsCallback
+test_masks_plot_dir: ${output_dir}/mask/test/
+test_cumulative_masks_plot_dir: ${output_dir}/mask/test_cumulative/
+training_masks_plot_dir: ${output_dir}/mask/training/
+plot_training_mask_every_n_steps: 10
+adjustment_rate_plot_dir: ${output_dir}/adjustment_rate/
+plot_adjustment_rate_every_n_steps: 10

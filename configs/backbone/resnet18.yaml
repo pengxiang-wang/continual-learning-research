@@ -2,4 +2,4 @@ _target_: clarena.backbones.ResNet18
 input_channels: 3        
 output_dim: 512
 batch_normalisation: True
-pretrained: True
+pretrained_weights: IMAGENET1K_V1
