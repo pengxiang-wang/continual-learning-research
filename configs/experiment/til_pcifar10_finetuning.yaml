@@ -6,7 +6,7 @@ num_tasks: 20
 global_seed: 1
 
 defaults:
-  - /cl_dataset: split_tinyimagenet.yaml
+  - /cl_dataset: permuted_cifar10.yaml
   - /backbone: resnet18.yaml
   - /cl_algorithm: finetuning.yaml
   - /optimizer: adam.yaml
@@ -21,10 +21,11 @@ optimizer:
   lr: 0.001
   
 trainer: 
-  max_epochs: 30
+  max_epochs: 20
+
 
 
 test: True
-output_dir: outputs/til_stinyimagenet_finetuning/${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/til_pcifar10_finetuning/${now:%Y-%m-%d_%H-%M-%S}
 
 
