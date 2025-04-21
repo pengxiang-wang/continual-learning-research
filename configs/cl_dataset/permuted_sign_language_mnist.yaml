@@ -1,0 +1,6 @@
+_target_: clarena.cl_datasets.PermutedSignLanguageMNIST
+root: data/SignLanguageMNIST
+num_tasks: 20
+validation_percentage: 0.1
+batch_size: 128
+permutation_mode: first_channel_only
