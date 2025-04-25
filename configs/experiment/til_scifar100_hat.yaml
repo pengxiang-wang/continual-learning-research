@@ -11,9 +11,9 @@ defaults:
   - /cl_algorithm: hat.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: mps.yaml
+  - /trainer: cpu.yaml
   - /lightning_loggers: default.yaml
-  - /callbacks: hat.yaml
+  - /callbacks: default.yaml
   - /hydra: default.yaml
   - /misc: default.yaml
 

@@ -1,0 +1,9 @@
+_target_: clarena.cl_datasets.PermutedCaltech101
+root: data/Caltech101
+num_tasks: 20
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 256
+permutation_mode: first_channel_only
+repeat_channels: 3 # this dataset has both RGB and grayscale images, so we need to repeat the channels uniformly to 3
+resize: (32, 32)

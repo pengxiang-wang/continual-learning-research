@@ -1,6 +1,5 @@
 defaults:
   - pylogger: default.yaml
   - cl_metrics: default.yaml
-  - save_first_batch_images: default.yaml
   - cl_rich_progress_bar: default.yaml
 

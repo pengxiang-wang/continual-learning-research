@@ -1,0 +1,7 @@
+_target_: clarena.cl_datasets.PermutedFood101
+root: data/Food101
+num_tasks: 20
+validation_percentage: 0.1
+batch_size: 128
+permutation_mode: first_channel_only
+resize: (224, 224)

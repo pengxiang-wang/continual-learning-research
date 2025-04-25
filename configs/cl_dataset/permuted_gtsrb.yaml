@@ -3,4 +3,5 @@ root: data/GTSRB
 num_tasks: 20
 validation_percentage: 0.1
 batch_size: 128
+resize: (32, 32)
 permutation_mode: first_channel_only

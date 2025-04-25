@@ -1,0 +1,5 @@
+_target_: clarena.cl_datasets.PermutedPCAM
+root: data/PCAM
+num_tasks: 20
+batch_size: 128
+permutation_mode: first_channel_only
