@@ -1,0 +1,6 @@
+_target_: clarena.cl_datasets.PermutedUSPS
+root: data/USPS
+num_tasks: 20
+validation_percentage: 0.1
+batch_size: 16
+permutation_mode: first_channel_only

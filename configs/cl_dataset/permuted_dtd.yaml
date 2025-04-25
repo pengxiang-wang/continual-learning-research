@@ -1,0 +1,6 @@
+_target_: clarena.cl_datasets.PermutedDTD
+root: data/DTD
+num_tasks: 20
+batch_size: 64
+permutation_mode: first_channel_only
+resize: (224, 224)

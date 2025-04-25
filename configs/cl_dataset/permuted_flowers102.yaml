@@ -1,0 +1,6 @@
+_target_: clarena.cl_datasets.PermutedFlowers102
+root: data/Flowers102
+num_tasks: 20
+batch_size: 64
+permutation_mode: first_channel_only
+resize: (224, 224)

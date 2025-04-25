@@ -13,7 +13,7 @@ defaults:
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
   - /lightning_loggers: default.yaml
-  - /callbacks: hat.yaml
+  - /callbacks: default.yaml
   - /hydra: default.yaml
   - /misc: default.yaml
 

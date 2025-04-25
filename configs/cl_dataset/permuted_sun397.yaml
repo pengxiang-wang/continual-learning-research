@@ -1,0 +1,8 @@
+_target_: clarena.cl_datasets.PermutedSUN397
+root: data/SUN397
+num_tasks: 20
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 128
+permutation_mode: first_channel_only
+resize: (224, 224)

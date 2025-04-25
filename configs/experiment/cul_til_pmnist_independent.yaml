@@ -18,7 +18,7 @@ defaults:
   - /unlearning_algorithm: independent_unlearn.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: mps.yaml
+  - /trainer: cpu.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: cul_default.yaml
   - /hydra: default.yaml
