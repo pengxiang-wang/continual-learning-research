@@ -1,0 +1,40 @@
+_target_: clarena.cl_datasets.Combined
+datasets: 
+  - torchvision.datasets.CIFAR10
+  - torchvision.datasets.CIFAR100
+  - torchvision.datasets.MNIST
+  - torchvision.datasets.SVHN
+  - torchvision.datasets.FashionMNIST
+  - torchvision.datasets.GTSRB
+  - clarena.cl_datasets.original.FaceScrub100
+  - clarena.cl_datasets.original.NotMNIST
+root: 
+  - data/CIFAR10
+  - data/CIFAR100
+  - data/MNIST
+  - data/SVHN
+  - data/FashionMNIST
+  - data/GTSRB
+  - data/FaceScrub100
+  - data/NotMNIST
+resize: 
+  - null # CIFAR-10 is already 32x32
+  - null # CIFAR-100 is already 32x32
+  - (32, 32) # MNIST is 28x28
+  - null # SVHN is already 32x32
+  - (32, 32) # FashionMNIST is 28x28
+  - (32, 32) # GTSRB has different sizes
+  - null # FaceScrub100 is already 32x32
+  - (32, 32) # NotMNIST is 28x28
+repeat_channels:
+  - null
+  - null
+  - 3 # MNIST is grayscale
+  - null
+  - 3 # FashionMNIST is grayscale
+  - null
+  - null
+  - 3 # NotMNIST is grayscale
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 64
