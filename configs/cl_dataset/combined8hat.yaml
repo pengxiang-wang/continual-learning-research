@@ -37,4 +37,4 @@ repeat_channels:
   - 3 # NotMNIST is grayscale
 validation_percentage: 0.1
 test_percentage: 0.1
-batch_size: 64
+batch_size: 128

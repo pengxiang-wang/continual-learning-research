@@ -1,0 +1,89 @@
+_target_: clarena.cl_datasets.Combined
+datasets: 
+  - torchvision.datasets.CIFAR10
+  - torchvision.datasets.CIFAR100
+  - torchvision.datasets.MNIST
+  - torchvision.datasets.SVHN
+  - torchvision.datasets.FashionMNIST
+  - torchvision.datasets.GTSRB
+  - clarena.cl_datasets.original.FaceScrub100
+  - clarena.cl_datasets.original.NotMNIST
+  - clarena.cl_datasets.original.EMNISTDigits
+  - clarena.cl_datasets.original.EMNISTLetters
+  - clarena.cl_datasets.original.ArabicHandwrittenDigits
+  - clarena.cl_datasets.original.KannadaMNIST
+  - clarena.cl_datasets.original.SignLanguageMNIST
+  - torchvision.datasets.KMNIST
+  - torchvision.datasets.Food101
+  - clarena.cl_datasets.original.Linnaeus5_32
+  - torchvision.datasets.Caltech101
+  - torchvision.datasets.EuroSAT
+  - torchvision.datasets.DTD
+  - torchvision.datasets.MNIST
+root: 
+  - data/CIFAR10
+  - data/CIFAR100
+  - data/MNIST
+  - data/SVHN
+  - data/FashionMNIST
+  - data/GTSRB
+  - data/FaceScrub
+  - data/NotMNIST
+  - data/EMNIST
+  - data/EMNIST
+  - data/AHDD
+  - data/KannadaMNIST
+  - data/SignLanguageMNIST
+  - data/KMNIST
+  - data/Food101
+  - data/Linnaeus5
+  - data/Caltech101
+  - data/EuroSAT
+  - data/DTD
+  - data/MNIST
+resize: 
+  - null # CIFAR-10 is already 32x32
+  - null # CIFAR-100 is already 32x32
+  - (32, 32) # MNIST is 28x28
+  - null # SVHN is already 32x32
+  - (32, 32) # FashionMNIST is 28x28
+  - (32, 32) # GTSRB has different sizes
+  - null # FaceScrub100 is already 32x32
+  - (32, 32) # NotMNIST is 28x28
+  - (32, 32) # EMNISTDigits is 28x28
+  - (32, 32) # EMNISTLetters is 28x28
+  - (32, 32) # ArabicHandwrittenDigits is 28x28
+  - (32, 32) # KannadaMNIST is 28x28
+  - (32, 32) # SignLanguageMNIST is 28x28
+  - (32, 32) # KMNIST is 28x28
+  - (32, 32) # Food101 has different sizes
+  - null # Linnaeus5_32 is already 32x32
+  - (32, 32) # Caltech101 has different sizes
+  - (32, 32) # EuroSAT is 64x64
+  - (32, 32) # DTD has different sizes
+  - (32, 32) # Country211 is 256x256
+
+repeat_channels:
+  - null
+  - null
+  - 3 # MNIST is grayscale
+  - null
+  - 3 # FashionMNIST is grayscale
+  - null
+  - null
+  - 3 # NotMNIST is grayscale
+  - 3 # EMNISTDigits is grayscale
+  - 3 # EMNISTLetters is grayscale
+  - 3 # ArabicHandwrittenDigits is grayscale
+  - 3 # KannadaMNIST is grayscale
+  - 3 # SignLanguageMNIST is grayscale
+  - 3 # KMNIST is grayscale
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 128
