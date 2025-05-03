@@ -20,6 +20,8 @@ defaults:
 optimizer:
   lr: 0.001
 
+
+
 trainer: 
   max_epochs: 2
 
