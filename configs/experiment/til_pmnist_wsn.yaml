@@ -2,20 +2,13 @@
 # make sure to include the above commented global setting!
 
 cl_paradigm: TIL
-num_tasks: 5
-unlearning_requests: 
-  2: [1]
-  # 4: [2]
-  # 5: [5]
-
-
+num_tasks: 20
 global_seed: 1
 
 defaults:
   - /cl_dataset: permuted_mnist.yaml
-  - /backbone: mlp.yaml
-  - /cl_algorithm: independent.yaml
-  - /unlearning_algorithm: independent_unlearn.yaml
+  - /backbone: wsn_mask_mlp.yaml
+  - /cl_algorithm: wsn.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
@@ -24,10 +17,18 @@ defaults:
   - /hydra: default.yaml
   - /misc: default.yaml
 
+optimizer:
+  lr: 0.01
+
+backbone:
+  input_dim: 784
+  hidden_dims: []
+  output_dim: 10
+
 trainer: 
   max_epochs: 2
 
 test: True
-output_dir: outputs/til_pmnist_independent/${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/til_pmnist_wsn/${now:%Y-%m-%d_%H-%M-%S}
 
 
