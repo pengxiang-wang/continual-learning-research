@@ -3,139 +3,139 @@
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.CIFAR100
   default_root_dir: ${output_dir} 
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.MNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 2 
 - _target_: lightning.Trainer # torchvision.datasets.SVHN
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.FashionMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.GTSRB
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.FaceScrub100
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.NotMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.EMNISTDigits
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.EMNISTLetters
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.ArabicHandwrittenDigits
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.KannadaMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.SignLanguageMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.KMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.Food101
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # clarena.cl_datasets.original.Linnaeus5_32
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.Caltech101
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.EuroSAT
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.DTD
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
 - _target_: lightning.Trainer # torchvision.datasets.Country211
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
-  accelerator: mps
+  accelerator: gpu
   devices: 1
   max_epochs: 20
