@@ -1,0 +1,7 @@
+_target_: clarena.callbacks.JLMetricsCallback
+save_dir: ${output_dir}/results/
+test_acc_csv_name: acc.csv
+test_loss_cls_csv_name: loss_cls.csv
+test_acc_plot_name: acc.png
+test_loss_cls_plot_name: loss_cls.png
+

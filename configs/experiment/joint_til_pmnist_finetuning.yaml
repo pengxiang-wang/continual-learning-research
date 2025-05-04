@@ -4,11 +4,12 @@
 cl_paradigm: TIL
 num_tasks: 20
 global_seed: 1
+joint_batch_size: 128
+
 
 defaults:
   - /cl_dataset: permuted_mnist.yaml
   - /backbone: mlp.yaml
-  - /cl_algorithm: finetuning.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
@@ -16,6 +17,13 @@ defaults:
   - /callbacks: joint.yaml
   - /hydra: default.yaml
   - /misc: default.yaml
+
+backbone:
+  batch_normalisation: false
+
+cl_dataset:
+  num_tasks: ${num_tasks}
+
 
 trainer: 
   max_epochs: 2

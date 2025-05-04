@@ -1,5 +1,5 @@
 defaults:
-  - pylogger: default.yaml
+  - cl_pylogger: default.yaml
   - cl_metrics: default.yaml
   - hat_metrics: plot_adjustment_rate.yaml
   - cl_rich_progress_bar: default.yaml
