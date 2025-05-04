@@ -1,5 +1,5 @@
 defaults:
-  - pylogger: default.yaml
-  - cl_metrics: default.yaml
-  - cl_rich_progress_bar: default.yaml
+  - jl_pylogger: default.yaml
+  - jl_metrics: default.yaml
+  - rich_progress_bar: default.yaml
 
