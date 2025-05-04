@@ -19,7 +19,7 @@ datasets:
   - torchvision.datasets.Caltech101
   - torchvision.datasets.EuroSAT
   - torchvision.datasets.DTD
-  - torchvision.datasets.MNIST
+  - torchvision.datasets.Country211
 root: 
   - data/CIFAR10
   - data/CIFAR100
@@ -40,7 +40,7 @@ root:
   - data/Caltech101
   - data/EuroSAT
   - data/DTD
-  - data/MNIST
+  - data/Country211
 resize: 
   - null # CIFAR-10 is already 32x32
   - null # CIFAR-100 is already 32x32

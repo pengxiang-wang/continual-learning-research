@@ -9,5 +9,5 @@ enable_checkpointing: False
 accelerator: mps
 devices: 1
 
-max_epochs: 10
+max_epochs: 20
 
