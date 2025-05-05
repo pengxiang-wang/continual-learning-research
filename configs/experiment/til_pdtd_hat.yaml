@@ -6,9 +6,9 @@ num_tasks: 20
 global_seed: 1
 
 defaults:
-  - /cl_dataset: permuted_emnist_byclass.yaml
-  - /backbone: mlp.yaml
-  - /cl_algorithm: finetuning.yaml
+  - /cl_dataset: permuted_dtd.yaml
+  - /backbone: hat_mask_resnet18.yaml
+  - /cl_algorithm: hat.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: mps.yaml
@@ -17,10 +17,15 @@ defaults:
   - /hydra: default.yaml
   - /misc: default.yaml
 
+optimizer:
+  lr: 0.001
+  
 trainer: 
-  max_epochs: 2
+  max_epochs: 20
+
+
 
 test: True
-output_dir: outputs/til_pemnist_byclass_finetuning/${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/til_pdtd_hat/${now:%Y-%m-%d_%H-%M-%S}
 
 

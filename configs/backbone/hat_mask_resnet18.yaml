@@ -2,4 +2,3 @@ _target_: clarena.backbones.HATMaskResNet18
 input_channels: 3
 output_dim: 512
 gate: sigmoid
-pretrained_weights: IMAGENET1K_V1

@@ -6,4 +6,12 @@ test_percentage: 0.1
 batch_size: 256
 permutation_mode: first_channel_only
 repeat_channels: 3 # this dataset has both RGB and grayscale images, so we need to repeat the channels uniformly to 3
-resize: (32, 32)
+resize: (256, 256)
+custom_transforms:
+  _target_: torchvision.transforms.Compose # For Caltech101
+  transforms:
+    - _target_: torchvision.transforms.Resize
+      size: [256, 256]
+    - _target_: torchvision.transforms.RandomResizedCrop
+      size: 224
+    - _target_: torchvision.transforms.RandomHorizontalFlip

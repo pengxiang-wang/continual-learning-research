@@ -5,3 +5,13 @@ validation_percentage: 0.1
 batch_size: 128
 permutation_mode: first_channel_only
 resize: (224, 224)
+custom_transforms:
+  _target_: torchvision.transforms.Compose  # For Food101
+  transforms:
+    - _target_: torchvision.transforms.RandomResizedCrop
+      size: 224
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.3
+      contrast: 0.3
+      saturation: 0.3

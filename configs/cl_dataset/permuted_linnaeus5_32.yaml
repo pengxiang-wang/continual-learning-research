@@ -5,3 +5,9 @@ num_tasks: 20
 validation_percentage: 0.1
 batch_size: 128
 permutation_mode: first_channel_only
+custom_transforms:
+  _target_: torchvision.transforms.Compose # For Linnaeus5_32
+  transforms:
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+    - _target_: torchvision.transforms.RandomRotation
+      degrees: 15

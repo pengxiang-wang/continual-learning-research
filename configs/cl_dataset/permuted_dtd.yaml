@@ -4,3 +4,15 @@ num_tasks: 20
 batch_size: 64
 permutation_mode: first_channel_only
 resize: (224, 224)
+custom_transforms:
+  _target_: torchvision.transforms.Compose # For DTD
+  transforms:
+    - _target_: torchvision.transforms.Resize
+      size: [256, 256]
+    - _target_: torchvision.transforms.RandomResizedCrop
+      size: 224
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.4
+      contrast: 0.4
+      saturation: 0.4
