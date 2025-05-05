@@ -12,7 +12,7 @@ defaults:
   - /backbone: mlp.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: cpu.yaml
+  - /trainer: mps.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: joint.yaml
   - /hydra: default.yaml

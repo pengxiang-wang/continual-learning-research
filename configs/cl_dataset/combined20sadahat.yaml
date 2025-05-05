@@ -1,4 +1,7 @@
 _target_: clarena.cl_datasets.Combined
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 128
 datasets: 
   - torchvision.datasets.CIFAR10
   - torchvision.datasets.CIFAR100
@@ -62,7 +65,6 @@ resize:
   - (32, 32) # EuroSAT is 64x64
   - (32, 32) # DTD has different sizes
   - (32, 32) # Country211 is 256x256
-
 repeat_channels:
   - null
   - null
@@ -84,6 +86,119 @@ repeat_channels:
   - null
   - null
   - null
-validation_percentage: 0.1
-test_percentage: 0.1
-batch_size: 128
+custom_transforms:
+  - _target_: torchvision.transforms.Compose # For CIFAR-10
+    transforms:
+      - _target_: torchvision.transforms.RandomCrop
+        size: 32
+        padding: 4
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.2
+        contrast: 0.2
+        saturation: 0.2
+  - _target_: torchvision.transforms.Compose # For CIFAR-100
+    transforms:
+      - _target_: torchvision.transforms.transforms.RandomHorizontalFlip
+        p: 0.5
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 20
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.1
+        contrast: 0.1
+        saturation: 0.1
+      - _target_: torchvision.transforms.RandomAdjustSharpness
+        sharpness_factor: 2
+        p: 0.2
+      - _target_: torchvision.transforms.RandomErasing
+        p: 0.75
+        scale: [0.02, 0.1]
+        value: 1.0
+        inplace: False
+  - null # For MNIST
+  - _target_: torchvision.transforms.Compose # For SVHN
+    transforms:
+      - _target_: torchvision.transforms.RandomCrop
+        size: 32
+        padding: 4
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.2
+        contrast: 0.2
+        saturation: 0.2
+  - null # For FashionMNIST 
+  - _target_: torchvision.transforms.Compose # For GTSRB
+    transforms:
+      - _target_: torchvision.transforms.RandomAffine
+        degrees: 15
+        translate: [0.1, 0.1]
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.3
+        contrast: 0.3
+        saturation: 0.3
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+  - _target_: torchvision.transforms.Compose # For FaceScrub100
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 10
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.2
+        contrast: 0.2
+  - null # For NotMNIST
+  - null # For EMNISTDigits
+  - null # For EMNISTLetters
+  - null # For ArabicHandwrittenDigits
+  - null # For KannadaMNIST
+  - null # For SignLanguageMNIST
+  - null # For KMNIST
+  - _target_: torchvision.transforms.Compose # For Food101
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.3
+        contrast: 0.3
+        saturation: 0.3
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 10
+  - _target_: torchvision.transforms.Compose # For Linnaeus5_32
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 15
+  - _target_: torchvision.transforms.Compose # For Caltech101
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 15
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.2
+        contrast: 0.2
+        saturation: 0.2
+  - _target_: torchvision.transforms.Compose # For EuroSAT
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.2
+        contrast: 0.2
+        saturation: 0.2
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 10
+  - _target_: torchvision.transforms.Compose # For DTD
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.4
+        contrast: 0.4
+        saturation: 0.4
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 15
+  - _target_: torchvision.transforms.Compose # For Country211
+    transforms:
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.3
+        contrast: 0.3
+        saturation: 0.3
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 15

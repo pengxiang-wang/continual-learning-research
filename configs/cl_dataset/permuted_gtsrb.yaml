@@ -5,3 +5,15 @@ validation_percentage: 0.1
 batch_size: 128
 resize: (32, 32)
 permutation_mode: first_channel_only
+custom_transforms:
+  _target_: torchvision.transforms.Compose # For GTSRB
+  transforms:
+    - _target_: torchvision.transforms.Resize
+      size: [48, 48]
+    - _target_: torchvision.transforms.RandomAffine
+      degrees: 15
+      translate: [0.1, 0.1]
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.3
+      contrast: 0.3
+      saturation: 0.3

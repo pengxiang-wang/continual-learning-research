@@ -4,3 +4,14 @@ num_tasks: 20
 validation_percentage: 0.1
 batch_size: 128
 permutation_mode: first_channel_only
+custom_transforms:
+  _target_: torchvision.transforms.Compose # For CIFAR-10
+  transforms:
+    - _target_: torchvision.transforms.RandomCrop
+      size: 32
+      padding: 4
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2

@@ -5,3 +5,13 @@ validation_percentage: 0.1
 test_percentage: 0.1
 batch_size: 64
 permutation_mode: first_channel_only
+custom_transforms:
+  _target_: torchvision.transforms.Compose # For EuroSAT
+  transforms:
+    - _target_: torchvision.transforms.RandomResizedCrop
+      size: 64
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
