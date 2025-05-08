@@ -1,0 +1,18 @@
+_target_: clarena.cl_datasets.SplitCIFAR10
+root: data/CIFAR10
+class_split: [
+  [0, 1], [2, 3], [4, 5], [6, 7], [8, 9],
+]
+validation_percentage: 0.1
+batch_size: 64
+custom_transforms:
+  _target_: torchvision.transforms.Compose # For CIFAR-10
+  transforms:
+    - _target_: torchvision.transforms.RandomCrop
+      size: 32
+      padding: 4
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2

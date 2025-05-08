@@ -1,0 +1,16 @@
+_target_: clarena.cl_algorithms.FGAdaHAT
+adjustment_intensity: 5e-7
+importance_type: output_weight_abs_sum
+importance_summing_strategy: add_average
+importance_scheduler_type: linear_sparsity_reg
+neuron_to_weight_importance_aggregation_mode: min
+s_max: 400.0
+clamp_threshold: 50.0
+mask_sparsity_reg_factor: 0.1
+mask_sparsity_reg_mode: original
+task_embedding_init_mode: N01
+base_importance: 0.01
+base_mask_sparsity_reg: 0.1
+base_linear: 10
+filter_unmasked_importance: False
+step_multiply_training_mask: True
