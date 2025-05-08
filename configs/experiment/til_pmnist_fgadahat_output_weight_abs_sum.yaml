@@ -6,12 +6,12 @@ num_tasks: 20
 global_seed: 1
 
 defaults:
-  - /cl_dataset: combined20fgadahat.yaml
-  - /backbone: resnet18.yaml
-  - /cl_algorithm: finetuning.yaml
+  - /cl_dataset: permuted_mnist.yaml
+  - /backbone: hat_mask_mlp.yaml
+  - /cl_algorithm: fgadahat_output_weight_abs_sum.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: mps_20_tasks.yaml
+  - /trainer: mps.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: default.yaml
   - /hydra: default.yaml
@@ -20,8 +20,10 @@ defaults:
 optimizer:
   lr: 0.001
 
+trainer: 
+  max_epochs: 2
 
 test: True
-output_dir: outputs/til_combined20fgadahat_finetuning/${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/til_pmnist_fgadahat_output_weight_abs_sum/${now:%Y-%m-%d_%H-%M-%S}
 
 
