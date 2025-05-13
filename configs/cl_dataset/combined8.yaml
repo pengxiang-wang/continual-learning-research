@@ -10,7 +10,7 @@ datasets:
   - torchvision.datasets.FashionMNIST
   - torchvision.datasets.GTSRB
   - clarena.cl_datasets.original.FaceScrub100
-  - clarena.cl_datasets.original.NotMNIST
+  - clarena.cl_datasets.original.NotMNISTFromHAT
 root: 
   - data/CIFAR10
   - data/CIFAR100
