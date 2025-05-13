@@ -6,9 +6,9 @@ num_tasks: 20
 global_seed: 1
 
 defaults:
-  - /cl_dataset: combined8hat.yaml
-  - /backbone: resnet18.yaml
-  - /cl_algorithm: finetuning.yaml
+  - /cl_dataset: combined20.yaml
+  - /backbone: hat_mask_resnet18.yaml
+  - /cl_algorithm: hat.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: mps_20_tasks.yaml
@@ -22,6 +22,6 @@ optimizer:
 
 
 test: True
-output_dir: outputs/til_combined8hat_finetuning/${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/til_combined20_hat/${now:%Y-%m-%d_%H-%M-%S}
 
 

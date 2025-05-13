@@ -8,9 +8,9 @@ datasets:
   - torchvision.datasets.MNIST
   - torchvision.datasets.SVHN
   - torchvision.datasets.FashionMNIST
-  - torchvision.datasets.GTSRB
-  - clarena.cl_datasets.original.FaceScrub100
-  - clarena.cl_datasets.original.NotMNIST
+  - clarena.cl_datasets.original.TrafficSignsFromHAT
+  - clarena.cl_datasets.original.FaceScrubFromHAT
+  - clarena.cl_datasets.original.NotMNISTFromHAT
   - clarena.cl_datasets.original.EMNISTDigits
   - clarena.cl_datasets.original.EMNISTLetters
   - clarena.cl_datasets.original.ArabicHandwrittenDigits
@@ -29,7 +29,7 @@ root:
   - data/MNIST
   - data/SVHN
   - data/FashionMNIST
-  - data/GTSRB
+  - data/TrafficSigns
   - data/FaceScrub
   - data/NotMNIST
   - data/EMNIST
@@ -50,7 +50,7 @@ resize:
   - (32, 32) # MNIST is 28x28
   - null # SVHN is already 32x32
   - (32, 32) # FashionMNIST is 28x28
-  - (32, 32) # GTSRB has different sizes
+  - (32, 32) # TrafficSigns has different sizes
   - null # FaceScrub100 is already 32x32
   - (32, 32) # NotMNIST is 28x28
   - (32, 32) # EMNISTDigits is 28x28
@@ -66,13 +66,13 @@ resize:
   - (32, 32) # DTD has different sizes
   - (32, 32) # Country211 is 256x256
 repeat_channels:
-  - null
-  - null
+  - null # CIFAR-10 is RGB
+  - null # CIFAR-100 is RGB
   - 3 # MNIST is grayscale
-  - null
+  - null # SVHN is RGB
   - 3 # FashionMNIST is grayscale
-  - null
-  - null
+  - null # TrafficSigns is RGB
+  - null # FaceScrub100 is RGB
   - 3 # NotMNIST is grayscale
   - 3 # EMNISTDigits is grayscale
   - 3 # EMNISTLetters is grayscale
@@ -80,12 +80,12 @@ repeat_channels:
   - 3 # KannadaMNIST is grayscale
   - 3 # SignLanguageMNIST is grayscale
   - 3 # KMNIST is grayscale
-  - null
-  - null
-  - null
-  - null
-  - null
-  - null
+  - null # Food101 is RGB
+  - null # Linnaeus5_32 is RGB
+  - 3 # Caltech101 is grayscale
+  - null # EuroSAT is RGB
+  - null # DTD is RGB
+  - null # Country211 is RGB
 custom_transforms:
   - _target_: torchvision.transforms.Compose # For CIFAR-10
     transforms:
@@ -127,7 +127,7 @@ custom_transforms:
         contrast: 0.2
         saturation: 0.2
   - null # For FashionMNIST 
-  - _target_: torchvision.transforms.Compose # For GTSRB
+  - _target_: torchvision.transforms.Compose # For TrafficSigns
     transforms:
       - _target_: torchvision.transforms.RandomAffine
         degrees: 15
