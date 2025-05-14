@@ -1,0 +1,4 @@
+_target_: clarena.cl_algorithms.NISPA
+num_epochs_per_phase: int,
+accuracy_fall_threshold: float,
+k: float,
