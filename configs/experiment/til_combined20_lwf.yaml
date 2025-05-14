@@ -7,8 +7,8 @@ global_seed: 1
 
 defaults:
   - /cl_dataset: combined20.yaml
-  - /backbone: hat_mask_resnet18.yaml
-  - /cl_algorithm: hat.yaml
+  - /backbone: resnet18.yaml
+  - /cl_algorithm: lwf.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: mps.yaml
@@ -23,7 +23,8 @@ optimizer:
 trainer:
   max_epochs: 20
 
+
 test: True
-output_dir: outputs/til_combined20_hat/${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/til_combined20_lwf/${now:%Y-%m-%d_%H-%M-%S}
 
 
