@@ -21,7 +21,7 @@ optimizer:
   lr: 0.001
 
 trainer:
-  max_epochs: 20
+  max_epochs: 5
 
 
 test: True

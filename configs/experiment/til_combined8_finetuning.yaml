@@ -22,7 +22,7 @@ optimizer:
 
 
 trainer:
-  max_epochs: 20
+  max_epochs: 5
 
 test: True
 output_dir: outputs/til_combined8_finetuning/${now:%Y-%m-%d_%H-%M-%S}
