@@ -21,7 +21,7 @@ optimizer:
   lr: 0.001
 
 trainer:
-  max_epochs: 20
+  max_epochs: 5
 
 test: True
 output_dir: outputs/til_combined20_fgadahat_input_weight_abs_sum_x_activation_abs/${now:%Y-%m-%d_%H-%M-%S}
