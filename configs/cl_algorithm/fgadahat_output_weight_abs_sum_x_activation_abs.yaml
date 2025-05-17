@@ -2,7 +2,6 @@ _target_: clarena.cl_algorithms.FGAdaHAT
 adjustment_intensity: 5e-7
 importance_type: output_weight_abs_sum_x_activation_abs
 importance_summing_strategy: reciprocal_decrease
-importance_summing_strategy_exponential_decay_rate: 0.1
 importance_scheduler_type: linear_sparsity_reg
 neuron_to_weight_importance_aggregation_mode: min
 s_max: 400.0
