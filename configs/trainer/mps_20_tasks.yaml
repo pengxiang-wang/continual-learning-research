@@ -1,138 +1,157 @@
-
-- _target_: lightning.Trainer # torchvision.datasets.CIFAR10
+1: # torchvision.datasets.CIFAR10
+  _target_: lightning.Trainer # torchvision.datasets.CIFAR10
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # torchvision.datasets.CIFAR100
-  default_root_dir: ${output_dir} 
+2: # torchvision.datasets.CIFAR100
+  _target_: lightning.Trainer # torchvision.datasets.CIFAR100
+  default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 200
-- _target_: lightning.Trainer # torchvision.datasets.MNIST
+3: # torchvision.datasets.MNIST
+  _target_: lightning.Trainer # torchvision.datasets.MNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # torchvision.datasets.SVHN
+4: # torchvision.datasets.SVHN
+  _target_: lightning.Trainer # torchvision.datasets.SVHN
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # torchvision.datasets.FashionMNIST
+5: # torchvision.datasets.FashionMNIST
+  _target_: lightning.Trainer # torchvision.datasets.FashionMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # torchvision.datasets.GTSRB
+6: # torchvision.datasets.GTSRB
+  _target_: lightning.Trainer # torchvision.datasets.GTSRB
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # clarena.cl_datasets.original.FaceScrub100
+7: # clarena.cl_datasets.original.FaceScrub100
+  _target_: lightning.Trainer # clarena.cl_datasets.original.FaceScrub100
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # clarena.cl_datasets.original.NotMNIST
+8: # clarena.cl_datasets.original.NotMNIST
+  _target_: lightning.Trainer # clarena.cl_datasets.original.NotMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # clarena.cl_datasets.original.EMNISTDigits
+9: # clarena.cl_datasets.original.EMNISTDigits
+  _target_: lightning.Trainer # clarena.cl_datasets.original.EMNISTDigits
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # clarena.cl_datasets.original.EMNISTLetters
+10: # clarena.cl_datasets.original.EMNISTLetters
+  _target_: lightning.Trainer # clarena.cl_datasets.original.EMNISTLetters
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # clarena.cl_datasets.original.ArabicHandwrittenDigits
+11: # clarena.cl_datasets.original.ArabicHandwrittenDigits
+  _target_: lightning.Trainer # clarena.cl_datasets.original.ArabicHandwrittenDigits
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # clarena.cl_datasets.original.KannadaMNIST
+12: # clarena.cl_datasets.original.KannadaMNIST
+  _target_: lightning.Trainer # clarena.cl_datasets.original.KannadaMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # clarena.cl_datasets.original.SignLanguageMNIST
+13: # clarena.cl_datasets.original.SignLanguageMNIST
+  _target_: lightning.Trainer # clarena.cl_datasets.original.SignLanguageMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # torchvision.datasets.KMNIST
+14: # torchvision.datasets.KMNIST
+  _target_: lightning.Trainer # torchvision.datasets.KMNIST
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 2
-- _target_: lightning.Trainer # torchvision.datasets.Food101
+15: # torchvision.datasets.Food101
+  _target_: lightning.Trainer # torchvision.datasets.Food101
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # clarena.cl_datasets.original.Linnaeus5_32
+16: # clarena.cl_datasets.original.Linnaeus5_32
+  _target_: lightning.Trainer # clarena.cl_datasets.original.Linnaeus5_32
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # torchvision.datasets.Caltech101
+17: # torchvision.datasets.Caltech101
+  _target_: lightning.Trainer # torchvision.datasets.Caltech101
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # torchvision.datasets.EuroSAT
+18: # torchvision.datasets.EuroSAT
+  _target_: lightning.Trainer # torchvision.datasets.EuroSAT
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # torchvision.datasets.DTD
+19: # torchvision.datasets.DTD
+  _target_: lightning.Trainer # torchvision.datasets.DTD
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False
   accelerator: mps
   devices: 1
   max_epochs: 20
-- _target_: lightning.Trainer # torchvision.datasets.Country211
+20: # torchvision.datasets.Country211
+  _target_: lightning.Trainer # torchvision.datasets.Country211
   default_root_dir: ${output_dir}
   log_every_n_steps: 50
   enable_checkpointing: False

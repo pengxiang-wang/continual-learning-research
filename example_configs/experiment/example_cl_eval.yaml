@@ -1,0 +1,27 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+
+main_acc_csv_path: outputs/example_clmain_train/2023-10-01_12-00-00/results/acc.csv
+refjl_acc_csv_path: outputs/example_clmain_train/2023-10-01_12-00-00/clrefjl/results/acc.csv
+refil_acc_csv_path: outputs/example_clmain_train/2023-10-01_12-00-00/clrefil/results/acc.csv
+refrandom_acc_csv_path: outputs/example_clmain_train/2023-10-01_12-00-00/clrefrandom/results/acc.csv
+
+
+output_dir: outputs/example_clmain_train/2023-10-01_12-00-00
+
+bwt_save_dir: ${output_dir}/results
+bwt_csv_name: bwt.csv
+bwt_plot_name: bwt_plot.png
+
+fwt_save_dir: ${output_dir}/results
+fwt_csv_name: fwt.csv
+fwt_plot_name: fwt_plot.png
+
+fr_save_dir: ${output_dir}/results
+fr_csv_name: fr.csv
+fr_plot_name: fr_plot.png
+
+defaults:
+  - /hydra: default.yaml
+  - /misc: default.yaml

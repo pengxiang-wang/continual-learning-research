@@ -1,0 +1,4 @@
+defaults:
+  - cl_metrics: cleval.yaml
+  - cl_rich_progress_bar: default.yaml
+

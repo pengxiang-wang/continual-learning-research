@@ -12,5 +12,4 @@ fields_order:
   - trainer
   - callbacks
   - lightning_loggers
-  - hydra
   - misc

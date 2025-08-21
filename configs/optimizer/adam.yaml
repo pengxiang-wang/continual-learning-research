@@ -1,4 +1,4 @@
 _target_: torch.optim.Adam
 _partial_: True # partially instantiate optimizer without 'params' argument. Make sure this is included in any case!
-lr: 0.01
+lr: 0.001
 weight_decay: 0.0

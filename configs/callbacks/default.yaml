@@ -2,4 +2,5 @@ defaults:
   - cl_pylogger: default.yaml
   - cl_metrics: default.yaml
   - cl_rich_progress_bar: default.yaml
+  - save_model: default.yaml
 

@@ -1,9 +1,0 @@
-_target_: clarena.callbacks.CLMetricsCallback
-save_dir: ${output_dir}/results/
-test_acc_csv_name: acc.csv
-test_loss_cls_csv_name: loss_cls.csv
-test_acc_matrix_plot_name: acc_matrix.png
-test_loss_cls_matrix_plot_name: loss_cls_matrix.png
-test_ave_acc_plot_name: ave_acc.png
-test_ave_loss_cls_plot_name: ave_loss_cls.png
-
