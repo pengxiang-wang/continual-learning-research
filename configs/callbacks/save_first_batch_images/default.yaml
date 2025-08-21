@@ -1,2 +1,2 @@
-_target_: clarena.callbacks.SaveFirstBatchImagesCallback
+_target_: clarena.callbacks.SaveFirstBatchImages
 save_dir: ${output_dir}/samples/

@@ -1,0 +1,31 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+cl_paradigm: TIL
+train_tasks: 20
+eval_tasks: 20
+global_seed: 1
+joint_batch_size: 128
+
+
+defaults:
+  - /cl_dataset: split_cifar10.yaml
+  - /backbone: resnet18.yaml
+  - /optimizer: adam.yaml
+  - /lr_scheduler: reduce_lr_on_plateau.yaml
+  - /trainer: mps.yaml
+  - /lightning_loggers: default.yaml
+  - /callbacks: joint.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+backbone:
+  batch_normalization: false
+
+trainer: 
+  max_epochs: 20
+
+timestamp: ${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/joint_til_scifar10_finetuning/${timestamp}
+
+

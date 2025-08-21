@@ -1,0 +1,2 @@
+_target_: clarena.callbacks.SaveModels
+save_dir: ${output_dir}/saved_models/

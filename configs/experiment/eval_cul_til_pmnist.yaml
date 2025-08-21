@@ -1,0 +1,27 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+cl_paradigm: TIL
+jsd_eval_tasks: 5
+ad_eval_tasks: 5
+global_seed: 1
+
+defaults:
+  - /cl_dataset: permuted_mnist.yaml  
+  - /trainer: mps.yaml
+  - /callbacks: culeval.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+timestamp: ${now:%Y-%m-%d_%H-%M-%S}
+output_dir: outputs/cul_til_pmnist_independent/${timestamp}
+ref_output_dir: ${output_dir}/unlearning_ref
+full_output_dir: ${output_dir}/unlearning_full
+
+main_model_dir: ${output_dir}/saved_models
+ref_model_dir: ${ref_output_dir}/saved_models
+full_model_dir: ${full_output_dir}/saved_models
+
+main_model_filenames: [xxx.ckpt]
+ref_model_filenames: [xxx.ckpt]
+full_model_filenames: [xxx.ckpt]

@@ -1,0 +1,26 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+cl_paradigm: TIL
+train_tasks: 10
+eval_after_tasks: 10
+global_seed: 1
+
+defaults:
+  - /cl_dataset: permuted_mnist.yaml
+  - /backbone: clmlp.yaml
+  - /cl_algorithm: finetuning.yaml
+  - /optimizer: adam.yaml
+  - /lr_scheduler: reduce_lr_on_plateau.yaml
+  - /trainer: cpu.yaml
+  - /metrics: cl_default.yaml
+  - /lightning_loggers: default.yaml
+  - /callbacks: cl_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+output_dir: outputs/example_clmain_train/${misc.timestamp}
+
+# overrides
+trainer:
+  max_epochs: 2

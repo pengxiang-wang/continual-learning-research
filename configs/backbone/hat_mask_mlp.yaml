@@ -3,3 +3,4 @@ input_dim: 784
 hidden_dims: [256, 100]
 output_dim: 64
 gate: sigmoid
+batch_normalization: shared

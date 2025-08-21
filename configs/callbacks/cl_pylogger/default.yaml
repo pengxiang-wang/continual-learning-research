@@ -1,1 +1,1 @@
-_target_: clarena.callbacks.CLPyloggerCallback
+_target_: clarena.callbacks.CLPylogger

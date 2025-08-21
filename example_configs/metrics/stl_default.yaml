@@ -1,0 +1,6 @@
+- _target_: clarena.metrics.STLAccuracy
+  save_dir: ${output_dir}/results/
+  test_acc_csv_name: acc.csv
+- _target_: clarena.metrics.STLLoss
+  save_dir: ${output_dir}/results/
+  test_loss_cls_csv_name: loss_cls.csv
