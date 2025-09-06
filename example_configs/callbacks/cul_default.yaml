@@ -1,5 +1,5 @@
 - _target_: clarena.callbacks.CULPylogger
-- _target_: clarena.callbacks.CLRichProgressBar
+- _target_: lightning.pytorch.callbacks.RichProgressBar
 - _target_: clarena.callbacks.SaveFirstBatchImages
   save_dir: ${output_dir}/samples/
 - _target_: clarena.callbacks.SaveModels

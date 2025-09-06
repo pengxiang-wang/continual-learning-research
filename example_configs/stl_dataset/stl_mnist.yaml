@@ -1,4 +1,0 @@
-_target_: clarena.stl_datasets.STLMNIST
-root: data/MNIST
-validation_percentage: 0.1
-batch_size: 64

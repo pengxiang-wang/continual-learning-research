@@ -1,4 +1,0 @@
-_target_: clarena.backbones.WSNMaskMLP
-input_dim: 784
-hidden_dims: [256, 100]
-output_dim: 64

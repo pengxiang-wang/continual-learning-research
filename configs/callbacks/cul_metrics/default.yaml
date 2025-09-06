@@ -1,7 +1,0 @@
-_target_: clarena.callbacks.CULMetricsCallback
-distribution_distance_type: cosine
-save_dir: ${output_dir}/cul_results/
-test_distribution_distance_csv_name: distribution_distance.csv
-test_distribution_distance_plot_name: distribution_distance.png
-test_accuracy_difference_csv_name: accuracy_difference.csv
-test_accuracy_difference_plot_name: accuracy_difference.png

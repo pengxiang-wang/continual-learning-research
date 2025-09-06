@@ -1,4 +1,0 @@
-defaults:
-  - config_tree: default.yaml
-
-timestamp: ${now:%Y-%m-%d_%H-%M-%S}

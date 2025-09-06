@@ -1,0 +1,71 @@
+
+1:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2
+2: 
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: gpu
+  devices: 1
+  max_epochs: 2
+3:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: gpu
+  devices: 1
+  max_epochs: 2
+4: 
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2
+5:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2
+6:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2
+7:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2
+8:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2
+9:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2
+10:
+  _target_: lightning.Trainer # always link to the lightning.Trainer class
+  default_root_dir: ${output_dir}
+  log_every_n_steps: 20
+  accelerator: cpu
+  devices: 1
+  max_epochs: 2

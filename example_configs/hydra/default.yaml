@@ -1,4 +1,4 @@
-# configs for Hydra itself
+# configs for Hydra
 # https://hydra.cc/docs/configure_hydra/intro/
 
 # Hydra is automatically configured with defaults. These are overrides.
@@ -13,8 +13,7 @@ job_logging:
     level: INFO # set pylogger level
   handlers:
     file:
-      filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log
-
+      filename: ${hydra.runtime.output_dir}/console.log
 
 run:
   dir: ${output_dir}
