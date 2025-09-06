@@ -1,0 +1,5 @@
+_target_: lightning.pytorch.loggers.WandbLogger
+save_dir: ${output_dir}/lightning_logs/
+project: ${expr_name}
+name: ${misc.timestamp}
+version: ${misc.timestamp}

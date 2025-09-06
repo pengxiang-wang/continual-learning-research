@@ -1,0 +1,23 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+# pipeline info
+pipeline: MTL_EVAL
+eval_tasks: 5
+global_seed: 1
+
+# evaluation target
+model_path: outputs/example_mtl_expr/2023-10-01_12-00-00/saved_models/mtl_model.pth
+
+# components
+defaults:
+  - /mtl_dataset: from_cl_split_mnist.yaml
+  - /trainer: cpu_eval.yaml
+  - /metrics: mtl_default.yaml
+  - /lightning_loggers: default.yaml
+  - /callbacks: eval_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+# outputs
+output_dir: outputs/example_mtl_expr/2023-10-01_12-00-00/eval # output to the same folder as the experiment

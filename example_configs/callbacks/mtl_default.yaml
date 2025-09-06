@@ -1,7 +1,7 @@
 - _target_: clarena.callbacks.MTLPylogger
+- _target_: lightning.pytorch.callbacks.RichProgressBar
 - _target_: clarena.callbacks.SaveFirstBatchImages
   save_dir: ${output_dir}/samples/
 - _target_: clarena.callbacks.SaveModels
   save_dir: ${output_dir}/saved_models/
-- _target_: lightning.pytorch.callbacks.RichProgressBar
 

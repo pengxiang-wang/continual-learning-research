@@ -1,5 +1,0 @@
-defaults:
-  - jl_pylogger: default.yaml
-  - jl_metrics: default.yaml
-  - rich_progress_bar: default.yaml
-

@@ -1,9 +1,0 @@
-_target_: clarena.cl_algorithms.AdaHAT
-adjustment_mode: adahat_no_sum
-adjustment_intensity: 1e-6
-s_max: 400.0
-clamp_threshold: 50.0
-mask_sparsity_reg_factor: 0.1
-mask_sparsity_reg_mode: original
-task_embedding_init_mode: N01
-epsilon: 0.1

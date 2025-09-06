@@ -1,7 +1,0 @@
-_target_: clarena.cl_datasets.PermutedFGVCAircraft
-root: data/FGVCAircraft
-annotation_level: family
-num_tasks: 20
-batch_size: 128
-permutation_mode: first_channel_only
-resize: (224, 224)
