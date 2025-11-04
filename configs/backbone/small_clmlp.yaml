@@ -1,0 +1,5 @@
+_target_: clarena.backbones.CLMLP
+input_dim: 784
+hidden_dims: [100]
+output_dim: 100
+# batch_normalization: true

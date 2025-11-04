@@ -1,0 +1,21 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+# pipeline info
+pipeline: STL_EVAL
+global_seed: 1
+
+# evaluation target
+model_path: outputs/example_stl_expr/2023-10-01_12-00-00/saved_models/stl_model.pth
+
+# components
+defaults:
+  - /stl_dataset: mnist.yaml
+  - /trainer: cpu_eval.yaml
+  - /metrics: stl_default.yaml
+  - /lightning_loggers: default.yaml
+  - /callbacks: eval_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+output_dir: outputs/example_stl_expr/2023-10-01_12-00-00/eval # output to the same folder as the experiment

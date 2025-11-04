@@ -1,0 +1,5 @@
+print: True
+save: True
+save_path: ${output_dir}/config_tree.log
+style: dim
+guide_style: dim

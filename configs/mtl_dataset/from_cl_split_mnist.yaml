@@ -1,0 +1,13 @@
+_target_: clarena.mtl_datasets.MTLDatasetFromCL
+cl_dataset:
+  _target_: clarena.cl_datasets.SplitMNIST
+  root: data/MNIST
+  class_split: 
+    1: [0, 1]
+    2: [2, 3]
+    3: [4, 5]
+    4: [6, 7]
+    5: [8, 9]
+  validation_percentage: 0.1
+sampling_strategy: mixed
+batch_size: 128

@@ -1,0 +1,72 @@
+_target_: clarena.cl_datasets.Combined
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 128
+datasets: 
+  1: torchvision.datasets.CIFAR10
+  2: torchvision.datasets.CIFAR100
+  3: torchvision.datasets.MNIST
+  4: torchvision.datasets.SVHN
+  5: torchvision.datasets.FashionMNIST
+root: 
+  1: data/CIFAR10
+  2: data/CIFAR100
+  3: data/MNIST
+  4: data/SVHN
+  5: data/FashionMNIST
+resize: 
+  1: null # CIFAR-10 is already 32x32
+  2: null # CIFAR-100 is already 32x32
+  3: [32, 32] # MNIST is 28x28
+  4: null # SVHN is already 32x32
+  5: [32, 32] # FashionMNIST is 28x28
+repeat_channels:
+  1: null # CIFAR-10 is RGB
+  2: null # CIFAR-100 is RGB
+  3: 3 # MNIST is grayscale
+  4: null # SVHN is RGB
+  5: 3 # FashionMNIST is grayscale
+custom_transforms:
+  1: 
+    _target_: torchvision.transforms.Compose # For CIFAR-10
+    transforms:
+    - _target_: torchvision.transforms.RandomCrop
+      size: 32
+      padding: 4
+    - _target_: torchvision.transforms.RandomHorizontalFlip
+    - _target_: torchvision.transforms.ColorJitter
+      brightness: 0.2
+      contrast: 0.2
+      saturation: 0.2
+  2: 
+    _target_: torchvision.transforms.Compose # For CIFAR-100
+    transforms:
+      - _target_: torchvision.transforms.transforms.RandomHorizontalFlip
+        p: 0.5
+      - _target_: torchvision.transforms.RandomRotation
+        degrees: 20
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.1
+        contrast: 0.1
+        saturation: 0.1
+      - _target_: torchvision.transforms.RandomAdjustSharpness
+        sharpness_factor: 2
+        p: 0.2
+      - _target_: torchvision.transforms.RandomErasing
+        p: 0.75
+        scale: [0.02, 0.1]
+        value: 1.0
+        inplace: False
+  3: null # For MNIST
+  4:
+    _target_: torchvision.transforms.Compose # For SVHN
+    transforms:
+      - _target_: torchvision.transforms.RandomCrop
+        size: 32
+        padding: 4
+      - _target_: torchvision.transforms.RandomHorizontalFlip
+      - _target_: torchvision.transforms.ColorJitter
+        brightness: 0.2
+        contrast: 0.2
+        saturation: 0.2
+  5: null # For FashionMNIST 

@@ -1,0 +1,60 @@
+1:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+2:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+3:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+4:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+5:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+6:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+7:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+8:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+9:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
+10:
+  _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+  _partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+  mode: min
+  factor: 0.1
+  patience: 10
