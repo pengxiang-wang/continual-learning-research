@@ -1,0 +1,21 @@
+_target_: lightning.Trainer # always link to the lightning.Trainer class
+
+# device
+accelerator: mps
+devices: 1
+
+# epoch
+max_epochs: 10
+
+# profiler
+profiler: 
+  _target_: lightning.pytorch.profilers.SimpleProfiler
+  dirpath: ${output_dir}/profiler
+  filename: profiler
+
+# Trainer outputs
+default_root_dir: ${output_dir}
+log_every_n_steps: 20
+enable_checkpointing: false
+
+

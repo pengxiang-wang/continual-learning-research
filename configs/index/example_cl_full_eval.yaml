@@ -1,0 +1,31 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+# evaluation info
+pipeline: CL_FULL_EVAL
+eval_tasks: 10
+
+# evaluation target
+main_acc_csv_path: outputs/example_cl_main_expr/2023-10-01_12-00-00/results/acc.csv
+refjoint_acc_csv_path: outputs/example_cl_main_expr/2023-10-01_12-00-00/refjoint/results/acc.csv
+refindependent_acc_csv_path: outputs/example_cl_main_expr/2023-10-01_12-00-00/refindependent/results/acc.csv
+refrandom_acc_csv_path: outputs/example_cl_main_expr/2023-10-01_12-00-00/refrandom/results/acc.csv
+
+# components
+defaults:
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+# outputs
+output_dir: outputs/example_cl_main_expr/2023-10-01_12-00-00  # output to the same folder as the experiment
+
+bwt_save_dir: ${output_dir}/results
+bwt_csv_name: bwt.csv
+bwt_plot_name: bwt_plot.png
+
+fwt_save_dir: ${output_dir}/results
+fwt_csv_name: fwt.csv
+fwt_plot_name: fwt_plot.png
+
+fr_save_dir: ${output_dir}/results
+fr_csv_name: fr.csv

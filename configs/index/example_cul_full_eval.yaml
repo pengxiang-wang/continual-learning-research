@@ -1,0 +1,28 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+# evaluation info
+pipeline: CUL_FULL_EVAL
+dd_eval_tasks: 2
+ad_eval_tasks: 2
+global_seed: 1
+
+# evaluation target
+main_model_path: outputs/toy_cul/2025-09-15_14-13-59/saved_models/cl_model.pth
+refretrain_model_path: outputs/toy_cul/2025-09-15_14-21-43/saved_models/cl_model.pth
+reforiginal_model_path: outputs/toy_cul/2025-09-15_14-21-43/reforiginal/saved_models/cl_model.pth
+
+# paradigm settings
+cl_paradigm: TIL
+
+# components
+defaults: 
+  - /cl_dataset: combined_2.yaml
+  - /trainer: cpu_eval.yaml
+  - /metrics: cul_full_eval_default.yaml
+  - /callbacks: eval_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+# outputs
+output_dir: outputs/toy_cul/2025-09-15_14-21-43/eval # output to the same folder as the experiment

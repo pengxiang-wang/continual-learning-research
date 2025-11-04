@@ -1,0 +1,5 @@
+_target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+_partial_: True # partially instantiate learning rate scheduler without 'optimizer' argument. Make sure this is included in any case!
+mode: min
+factor: 0.1
+patience: 10

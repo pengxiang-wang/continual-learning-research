@@ -1,0 +1,25 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+# pipline info
+pipeline: CL_MAIN_EVAL
+eval_tasks: 10
+global_seed: 1
+
+# evaluation target
+main_model_path: outputs/example_cl_main_expr/2023-10-01_12-00-00/saved_models/cl_model.pth
+
+# paradigm settings
+cl_paradigm: TIL
+
+# components
+defaults:
+  - /cl_dataset: permuted_mnist.yaml
+  - /trainer: cpu_eval.yaml
+  - /metrics: cl_main_eval_default.yaml
+  - /callbacks: eval_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+# outputs
+output_dir: outputs/example_cl_main_expr/2023-10-01_12-00-00/eval # output to the same folder as the experiment

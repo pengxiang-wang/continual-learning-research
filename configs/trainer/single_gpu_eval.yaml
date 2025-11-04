@@ -1,0 +1,7 @@
+_target_: lightning.Trainer # always link to the lightning.Trainer class
+
+# device
+accelerator: gpu
+devices: 1
+
+
