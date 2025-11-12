@@ -1,1 +1,2 @@
 _target_: clarena.cul_algorithms.AmnesiacHATUnlearn
+fix_batch_size: 128
