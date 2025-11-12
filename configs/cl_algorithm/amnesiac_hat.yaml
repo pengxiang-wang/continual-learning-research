@@ -1,4 +1,6 @@
 _target_: clarena.cl_algorithms.AmnesiacHAT
+buffer_size: 2000
+distillation_reg_factor: 1.0
 adjustment_mode: adahat
 adjustment_intensity: 1e-6
 s_max: 400.0
