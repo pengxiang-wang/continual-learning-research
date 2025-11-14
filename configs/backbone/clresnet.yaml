@@ -1,0 +1,3 @@
+_target_: clarena.backbones.CLResNet18
+input_channels: 3
+output_dim: 512
