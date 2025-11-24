@@ -1,0 +1,5 @@
+_target_: clarena.backbones.AmnesiacHATMLP
+input_dim: 784
+hidden_dims: [256, 100]
+output_dim: 64
+gate: "sigmoid"
