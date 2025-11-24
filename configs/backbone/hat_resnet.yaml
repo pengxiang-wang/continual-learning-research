@@ -1,4 +1,5 @@
 _target_: clarena.backbones.HATMaskResNet18
 input_channels: 3
 output_dim: 512
+batch_normalization: false
 gate: "sigmoid"

@@ -1,0 +1,4 @@
+_target_: clarena.backbones.AmnesiacHATResNet18
+input_channels: 3
+output_dim: 512
+gate: "sigmoid"

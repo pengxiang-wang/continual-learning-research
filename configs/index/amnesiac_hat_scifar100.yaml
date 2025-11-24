@@ -18,7 +18,7 @@ unlearning_requests:
 # components
 defaults:
   - /cl_dataset: split_cifar100.yaml
-  - /backbone: hat_resnet.yaml
+  - /backbone: amnesiachat_resnet.yaml
   - /cl_algorithm: amnesiac_hat.yaml
   - /cul_algorithm: amnesiac_hat_unlearn.yaml
   - /optimizer: adam.yaml

@@ -2,31 +2,26 @@
 # make sure to include the above commented global setting!
 
 # pipeline info
-pipeline: CUL_MAIN_EXPR
-expr_name: amnesiac_hat
-train_tasks: 5
-eval_after_tasks: 5
+pipeline: CL_MAIN_EXPR
+expr_name: adahat
+train_tasks: 10
+eval_after_tasks: 10
 global_seed: 1
 
 # paradigm settings
 cl_paradigm: TIL
-unlearning_requests: 
-  2: [1]
-  4: [2]
-  5: [5]
 
 # components
 defaults:
-  - /cl_dataset: permuted_mnist.yaml
-  - /backbone: amnesiachat_mlp.yaml
-  - /cl_algorithm: amnesiac_hat.yaml
-  - /cul_algorithm: amnesiac_hat_unlearn.yaml
+  - /cl_dataset: split_cifar100.yaml
+  - /backbone: hat_resnet.yaml
+  - /cl_algorithm: adahat.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
-  - /metrics: cl_main_expr_default.yaml
+  - /metrics: hat_default.yaml
   - /lightning_loggers: default.yaml
-  - /callbacks: cul_default.yaml
+  - /callbacks: cl_default.yaml
   - /hydra: default.yaml
   - /misc: default.yaml
 
@@ -35,4 +30,4 @@ output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
 trainer: 
-  max_epochs: 2
+  max_epochs: 20
