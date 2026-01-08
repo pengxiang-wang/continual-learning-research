@@ -1,2 +1,7 @@
 _target_: clarena.cul_algorithms.AmnesiacHATUnlearn
+if_backup_compensation: true
+compensate_order: normal
+if_replay_fixing: true
 fix_batch_size: 64
+fix_num_steps: 50
+fix_strategy: joint

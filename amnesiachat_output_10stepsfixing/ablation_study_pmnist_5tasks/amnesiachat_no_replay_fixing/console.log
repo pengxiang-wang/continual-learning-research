@@ -1,0 +1,151 @@
+[2025-12-28 22:58:28,355][clarena.cli][INFO] - Running: continual unlearning full experiment...
+[2025-12-28 22:58:28,355][clarena.cli][INFO] - [Full Exeperiment] Running: continual unlearning main experiment...
+[2025-12-28 22:58:29,184][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 1 are ready.
+[2025-12-28 22:58:29,185][clarena.cl_datasets.base][INFO] - Train dataset for task 1 size: 54000
+[2025-12-28 22:58:29,185][clarena.cl_datasets.base][INFO] - Validation dataset for task 1 size: 6000
+[2025-12-28 22:58:29,188][clarena.callbacks.pylogger][INFO] - Start training continual learning task 1!
+[2025-12-28 22:59:30,387][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 1!
+[2025-12-28 22:59:30,388][clarena.cl_algorithms.amnesiac_hat][INFO] - Backup backbone state dicts saved for unlearning tasks.
+[2025-12-28 22:59:30,442][clarena.cl_datasets.base][INFO] - Test dataset for task 1 are ready.
+[2025-12-28 22:59:30,442][clarena.cl_datasets.base][INFO] - Test dataset for task 1 size: 10000
+[2025-12-28 22:59:30,447][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 1 on all previous and current tasks!
+[2025-12-28 22:59:32,132][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 1 on all previous and current tasks!
+[2025-12-28 22:59:32,153][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 22:59:32,193][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 2 are ready.
+[2025-12-28 22:59:32,193][clarena.cl_datasets.base][INFO] - Train dataset for task 2 size: 54000
+[2025-12-28 22:59:32,193][clarena.cl_datasets.base][INFO] - Validation dataset for task 2 size: 6000
+[2025-12-28 22:59:32,194][clarena.callbacks.pylogger][INFO] - Start training continual learning task 2!
+[2025-12-28 23:00:49,944][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 2!
+[2025-12-28 23:00:49,945][clarena.cl_algorithms.amnesiac_hat][INFO] - Backup backbone state dicts saved for unlearning tasks.
+[2025-12-28 23:00:49,961][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Starting unlearning process for tasks: [1]...
+[2025-12-28 23:00:49,961][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Deleted parameter update for unlearning task [1].
+[2025-12-28 23:00:49,964][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Unlearning process finished.
+[2025-12-28 23:00:49,970][clarena.cl_datasets.base][INFO] - Test dataset for task 2 are ready.
+[2025-12-28 23:00:49,970][clarena.cl_datasets.base][INFO] - Test dataset for task 2 size: 10000
+[2025-12-28 23:00:49,976][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 2 on all previous and current tasks!
+[2025-12-28 23:00:52,552][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 2 on all previous and current tasks!
+[2025-12-28 23:00:52,581][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:00:52,636][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 3 are ready.
+[2025-12-28 23:00:52,637][clarena.cl_datasets.base][INFO] - Train dataset for task 3 size: 54000
+[2025-12-28 23:00:52,637][clarena.cl_datasets.base][INFO] - Validation dataset for task 3 size: 6000
+[2025-12-28 23:00:52,638][clarena.callbacks.pylogger][INFO] - Start training continual learning task 3!
+[2025-12-28 23:02:04,230][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 3!
+[2025-12-28 23:02:04,231][clarena.cl_algorithms.amnesiac_hat][INFO] - Backup backbone state dicts saved for unlearning tasks.
+[2025-12-28 23:02:04,252][clarena.cl_datasets.base][INFO] - Test dataset for task 3 are ready.
+[2025-12-28 23:02:04,253][clarena.cl_datasets.base][INFO] - Test dataset for task 3 size: 10000
+[2025-12-28 23:02:04,259][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 3 on all previous and current tasks!
+[2025-12-28 23:02:08,178][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 3 on all previous and current tasks!
+[2025-12-28 23:02:08,224][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:02:08,306][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 4 are ready.
+[2025-12-28 23:02:08,306][clarena.cl_datasets.base][INFO] - Train dataset for task 4 size: 54000
+[2025-12-28 23:02:08,306][clarena.cl_datasets.base][INFO] - Validation dataset for task 4 size: 6000
+[2025-12-28 23:02:08,308][clarena.callbacks.pylogger][INFO] - Start training continual learning task 4!
+[2025-12-28 23:03:50,798][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 4!
+[2025-12-28 23:03:50,801][clarena.cl_algorithms.amnesiac_hat][INFO] - Backup backbone state dicts saved for unlearning tasks.
+[2025-12-28 23:03:50,820][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Starting unlearning process for tasks: [2]...
+[2025-12-28 23:03:50,821][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Deleted parameter update for unlearning task [2].
+[2025-12-28 23:03:50,825][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Unlearning process finished.
+[2025-12-28 23:03:50,831][clarena.cl_datasets.base][INFO] - Test dataset for task 4 are ready.
+[2025-12-28 23:03:50,832][clarena.cl_datasets.base][INFO] - Test dataset for task 4 size: 10000
+[2025-12-28 23:03:50,840][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 4 on all previous and current tasks!
+[2025-12-28 23:03:56,230][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 4 on all previous and current tasks!
+[2025-12-28 23:03:56,283][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:03:56,378][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 5 are ready.
+[2025-12-28 23:03:56,378][clarena.cl_datasets.base][INFO] - Train dataset for task 5 size: 54000
+[2025-12-28 23:03:56,378][clarena.cl_datasets.base][INFO] - Validation dataset for task 5 size: 6000
+[2025-12-28 23:03:56,380][clarena.callbacks.pylogger][INFO] - Start training continual learning task 5!
+[2025-12-28 23:05:31,641][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 5!
+[2025-12-28 23:05:31,660][clarena.cl_algorithms.amnesiac_hat][INFO] - Backup backbone state dicts saved for unlearning tasks.
+[2025-12-28 23:05:31,675][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Starting unlearning process for tasks: [5]...
+[2025-12-28 23:05:31,689][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Deleted parameter update for unlearning task [5].
+[2025-12-28 23:05:31,727][clarena.cul_algorithms.amnesiac_hat_unlearn][INFO] - Unlearning process finished.
+[2025-12-28 23:05:31,732][clarena.cl_datasets.base][INFO] - Test dataset for task 5 are ready.
+[2025-12-28 23:05:31,733][clarena.cl_datasets.base][INFO] - Test dataset for task 5 size: 10000
+[2025-12-28 23:05:31,741][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 5 on all previous and current tasks!
+[2025-12-28 23:05:38,426][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 5 on all previous and current tasks!
+[2025-12-28 23:05:38,490][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:05:38,500][clarena.cli][INFO] - [Full Exeperiment] Running: reference retrain experiment (continual unlearning)...
+[2025-12-28 23:05:38,597][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 3 are ready.
+[2025-12-28 23:05:38,597][clarena.cl_datasets.base][INFO] - Train dataset for task 3 size: 54000
+[2025-12-28 23:05:38,597][clarena.cl_datasets.base][INFO] - Validation dataset for task 3 size: 6000
+[2025-12-28 23:05:38,599][clarena.callbacks.pylogger][INFO] - Start training continual learning task 3!
+[2025-12-28 23:06:46,636][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 3!
+[2025-12-28 23:06:46,662][clarena.cl_datasets.base][INFO] - Test dataset for task 3 are ready.
+[2025-12-28 23:06:46,662][clarena.cl_datasets.base][INFO] - Test dataset for task 3 size: 10000
+[2025-12-28 23:06:46,672][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 3 on all previous and current tasks!
+[2025-12-28 23:06:48,313][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 3 on all previous and current tasks!
+[2025-12-28 23:06:48,323][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:06:48,430][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 4 are ready.
+[2025-12-28 23:06:48,430][clarena.cl_datasets.base][INFO] - Train dataset for task 4 size: 54000
+[2025-12-28 23:06:48,430][clarena.cl_datasets.base][INFO] - Validation dataset for task 4 size: 6000
+[2025-12-28 23:06:48,433][clarena.callbacks.pylogger][INFO] - Start training continual learning task 4!
+[2025-12-28 23:07:56,686][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 4!
+[2025-12-28 23:07:56,708][clarena.cl_datasets.base][INFO] - Test dataset for task 4 are ready.
+[2025-12-28 23:07:56,709][clarena.cl_datasets.base][INFO] - Test dataset for task 4 size: 10000
+[2025-12-28 23:07:56,716][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 4 on all previous and current tasks!
+[2025-12-28 23:07:59,314][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 4 on all previous and current tasks!
+[2025-12-28 23:07:59,322][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:07:59,334][clarena.cli][INFO] - [Full Exeperiment] Running: reference original experiment (continual unlearning)...
+[2025-12-28 23:07:59,439][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 1 are ready.
+[2025-12-28 23:07:59,440][clarena.cl_datasets.base][INFO] - Train dataset for task 1 size: 54000
+[2025-12-28 23:07:59,440][clarena.cl_datasets.base][INFO] - Validation dataset for task 1 size: 6000
+[2025-12-28 23:07:59,441][clarena.callbacks.pylogger][INFO] - Start training continual learning task 1!
+[2025-12-28 23:09:08,715][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 1!
+[2025-12-28 23:09:08,771][clarena.cl_datasets.base][INFO] - Test dataset for task 1 are ready.
+[2025-12-28 23:09:08,771][clarena.cl_datasets.base][INFO] - Test dataset for task 1 size: 10000
+[2025-12-28 23:09:08,778][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 1 on all previous and current tasks!
+[2025-12-28 23:09:10,342][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 1 on all previous and current tasks!
+[2025-12-28 23:09:10,353][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:09:10,410][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 2 are ready.
+[2025-12-28 23:09:10,410][clarena.cl_datasets.base][INFO] - Train dataset for task 2 size: 54000
+[2025-12-28 23:09:10,410][clarena.cl_datasets.base][INFO] - Validation dataset for task 2 size: 6000
+[2025-12-28 23:09:10,412][clarena.callbacks.pylogger][INFO] - Start training continual learning task 2!
+[2025-12-28 23:10:20,667][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 2!
+[2025-12-28 23:10:20,697][clarena.cl_datasets.base][INFO] - Test dataset for task 2 are ready.
+[2025-12-28 23:10:20,697][clarena.cl_datasets.base][INFO] - Test dataset for task 2 size: 10000
+[2025-12-28 23:10:20,705][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 2 on all previous and current tasks!
+[2025-12-28 23:10:23,509][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 2 on all previous and current tasks!
+[2025-12-28 23:10:23,517][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:10:23,594][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 3 are ready.
+[2025-12-28 23:10:23,595][clarena.cl_datasets.base][INFO] - Train dataset for task 3 size: 54000
+[2025-12-28 23:10:23,595][clarena.cl_datasets.base][INFO] - Validation dataset for task 3 size: 6000
+[2025-12-28 23:10:23,596][clarena.callbacks.pylogger][INFO] - Start training continual learning task 3!
+[2025-12-28 23:11:46,132][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 3!
+[2025-12-28 23:11:46,171][clarena.cl_datasets.base][INFO] - Test dataset for task 3 are ready.
+[2025-12-28 23:11:46,171][clarena.cl_datasets.base][INFO] - Test dataset for task 3 size: 10000
+[2025-12-28 23:11:46,185][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 3 on all previous and current tasks!
+[2025-12-28 23:11:52,963][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 3 on all previous and current tasks!
+[2025-12-28 23:11:52,973][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:11:53,063][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 4 are ready.
+[2025-12-28 23:11:53,063][clarena.cl_datasets.base][INFO] - Train dataset for task 4 size: 54000
+[2025-12-28 23:11:53,063][clarena.cl_datasets.base][INFO] - Validation dataset for task 4 size: 6000
+[2025-12-28 23:11:53,065][clarena.callbacks.pylogger][INFO] - Start training continual learning task 4!
+[2025-12-28 23:13:05,824][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 4!
+[2025-12-28 23:13:05,846][clarena.cl_datasets.base][INFO] - Test dataset for task 4 are ready.
+[2025-12-28 23:13:05,846][clarena.cl_datasets.base][INFO] - Test dataset for task 4 size: 10000
+[2025-12-28 23:13:05,853][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 4 on all previous and current tasks!
+[2025-12-28 23:13:11,044][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 4 on all previous and current tasks!
+[2025-12-28 23:13:11,052][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:13:11,105][clarena.cl_datasets.base][INFO] - Train and validation dataset for task 5 are ready.
+[2025-12-28 23:13:11,106][clarena.cl_datasets.base][INFO] - Train dataset for task 5 size: 54000
+[2025-12-28 23:13:11,106][clarena.cl_datasets.base][INFO] - Validation dataset for task 5 size: 6000
+[2025-12-28 23:13:11,107][clarena.callbacks.pylogger][INFO] - Start training continual learning task 5!
+[2025-12-28 23:14:10,955][clarena.callbacks.pylogger][INFO] - Finish training continual learning task 5!
+[2025-12-28 23:14:10,975][clarena.cl_datasets.base][INFO] - Test dataset for task 5 are ready.
+[2025-12-28 23:14:10,975][clarena.cl_datasets.base][INFO] - Test dataset for task 5 size: 10000
+[2025-12-28 23:14:10,983][clarena.callbacks.pylogger][INFO] - Start testing continual learning task 5 on all previous and current tasks!
+[2025-12-28 23:14:17,113][clarena.callbacks.pylogger][INFO] - Finish testing continual learning task 5 on all previous and current tasks!
+[2025-12-28 23:14:17,120][clarena.callbacks.save_models][INFO] - Model saved!
+[2025-12-28 23:14:17,131][clarena.cli][INFO] - [Full Exeperiment] Running: continual unlearning full evaluation...
+[2025-12-28 23:14:17,192][clarena.cl_datasets.base][INFO] - Test dataset for task 1 are ready.
+[2025-12-28 23:14:17,192][clarena.cl_datasets.base][INFO] - Test dataset for task 1 size: 10000
+[2025-12-28 23:14:17,196][clarena.cl_datasets.base][INFO] - Test dataset for task 2 are ready.
+[2025-12-28 23:14:17,196][clarena.cl_datasets.base][INFO] - Test dataset for task 2 size: 10000
+[2025-12-28 23:14:17,198][clarena.cl_datasets.base][INFO] - Test dataset for task 3 are ready.
+[2025-12-28 23:14:17,198][clarena.cl_datasets.base][INFO] - Test dataset for task 3 size: 10000
+[2025-12-28 23:14:17,200][clarena.cl_datasets.base][INFO] - Test dataset for task 4 are ready.
+[2025-12-28 23:14:17,201][clarena.cl_datasets.base][INFO] - Test dataset for task 4 size: 10000
+[2025-12-28 23:14:17,203][clarena.cl_datasets.base][INFO] - Test dataset for task 5 are ready.
+[2025-12-28 23:14:17,203][clarena.cl_datasets.base][INFO] - Test dataset for task 5 size: 10000
+[2025-12-28 23:14:17,207][clarena.cl_datasets.base][INFO] - Test dataset for task 5 are ready.
+[2025-12-28 23:14:17,207][clarena.cl_datasets.base][INFO] - Test dataset for task 5 size: 10000

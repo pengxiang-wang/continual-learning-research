@@ -1,0 +1,3 @@
+- pipeline=CUL_FULL_EXPR
+- index=amnesiachat_pmnist_5tasks
+- output_dir=amnesiachat_output/main_study/pmnist_5tasks
