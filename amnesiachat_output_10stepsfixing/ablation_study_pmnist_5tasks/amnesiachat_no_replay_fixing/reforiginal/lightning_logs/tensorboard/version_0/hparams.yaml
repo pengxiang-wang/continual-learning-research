@@ -1,0 +1,11 @@
+buffer_size: 64
+distillation_reg_factor: 1.0
+adjustment_mode: adahat
+s_max: 400.0
+clamp_threshold: 50
+mask_sparsity_reg_factor: 0.1
+mask_sparsity_reg_mode: original
+task_embedding_init_mode: N01
+alpha: null
+adjustment_intensity: 1.0e-06
+epsilon: 0.1

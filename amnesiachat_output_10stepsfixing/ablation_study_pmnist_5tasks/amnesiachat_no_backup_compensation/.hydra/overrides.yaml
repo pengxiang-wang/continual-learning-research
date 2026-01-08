@@ -1,0 +1,5 @@
+- pipeline=CUL_FULL_EXPR
+- index=amnesiachat_pmnist_5tasks
+- output_dir=amnesiachat_output/ablation_study_pmnist_5tasks/amnesiachat_no_backup_compensation
+- cul_algorithm.if_backup_compensation=false
+- cul_algorithm.if_replay_fixing=true
