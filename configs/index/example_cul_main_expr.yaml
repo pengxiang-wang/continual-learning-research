@@ -19,7 +19,7 @@ unlearnable_age: 3
 
 # components
 defaults:
-  - /cl_dataset: split_mnist.yaml
+  - /cl_dataset: permuted_mnist.yaml
   - /backbone: clmlp.yaml
   - /cl_algorithm: unlearnable_independent.yaml
   - /cul_algorithm: independent_unlearn.yaml
