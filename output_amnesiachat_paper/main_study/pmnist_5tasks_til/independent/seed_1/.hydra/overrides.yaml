@@ -1,0 +1,5 @@
+- pipeline=CUL_FULL_EXPR
+- index=amnesiachat_paper/independent_pmnist_5tasks
+- cl_paradigm=TIL
+- output_dir=output_amnesiachat_paper/main_study/pmnist_5tasks_til/independent/seed_1
+- global_seed=1

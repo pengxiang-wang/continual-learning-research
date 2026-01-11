@@ -1,0 +1,7 @@
+batch_size: 128
+backbone: clarena.backbones.CLMLP
+backbone.input_dim: 784
+backbone.hidden_dims:
+- 256
+- 100
+backbone.output_dim: 64
