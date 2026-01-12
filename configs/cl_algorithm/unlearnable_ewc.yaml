@@ -1,9 +1,0 @@
-_target_: clarena.cl_algorithms.UnlearnableEWC
-
-# EWC hyperparameters
-parameter_change_reg_factor: 5000.0
-when_calculate_fisher_information: train_end
-
-# unlearning switch (keep consistent with other unlearnable algorithms)
-disable_unlearning: false
-
