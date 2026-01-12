@@ -1,0 +1,9 @@
+_target_: clarena.cl_algorithms.UnlearnableLwF
+
+# LwF hyperparameters
+distillation_reg_factor: 0.1
+distillation_reg_temperature: 2.0
+
+# unlearning switch (keep consistent with other unlearnable algorithms)
+disable_unlearning: false
+
