@@ -3,26 +3,25 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: example_cul_main_expr
+expr_name: example_cul_ewc_main_expr
 train_tasks: 5
 eval_after_tasks: 5
 global_seed: 1
 
 # paradigm settings
 cl_paradigm: TIL
-unlearning_requests: 
+unlearning_requests:
   2: [1]
   4: [2]
   5: [5]
-unlearnable_age: 3
-
+unlearnable_age: 3   # required by CUL_MAIN_EXPR
 
 # components
 defaults:
   - /cl_dataset: permuted_mnist.yaml
   - /backbone: clmlp.yaml
-  - /cl_algorithm: unlearnable_independent.yaml
-  - /cul_algorithm: independent_unlearn.yaml
+  - /cl_algorithm: unlearnable_ewc.yaml      # <= changed
+  - /cul_algorithm: ewc_unlearn.yaml         # <= changed
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
@@ -36,5 +35,5 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
-trainer: 
+trainer:
   max_epochs: 2

@@ -1,0 +1,4 @@
+_target_: clarena.cl_algorithms.UnlearnableFinetuning
+
+# unlearning switch (keep consistent with other unlearnable algorithms)
+disable_unlearning: false
