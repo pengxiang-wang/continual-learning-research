@@ -1,0 +1,40 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+# pipeline info
+pipeline: CUL_MAIN_EXPR
+expr_name: derpp_smnist_5tasks
+train_tasks: 5
+eval_after_tasks: 5
+global_seed: 1
+
+# paradigm settings
+cl_paradigm: TIL
+unlearning_requests: 
+  2: [1]
+  4: [2]
+  5: [5]
+unlearnable_age: 3
+
+
+# components
+defaults:
+  - /cl_dataset: split_mnist.yaml
+  - /backbone: clmlp.yaml
+  - /cl_algorithm: amnesiac_derpp.yaml
+  - /cul_algorithm: amnesiac_derpp_unlearn.yaml
+  - /optimizer: adam.yaml
+  - /lr_scheduler: reduce_lr_on_plateau.yaml
+  - /trainer: cpu.yaml
+  - /metrics: cl_main_expr_default.yaml
+  - /lightning_loggers: default.yaml
+  - /callbacks: cul_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+# outputs
+output_dir: outputs/${expr_name}/${misc.timestamp}
+
+# overrides
+trainer: 
+  max_epochs: 2
