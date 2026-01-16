@@ -1,0 +1,4 @@
+_target_: clarena.cl_algorithms.AmnesiacDERpp
+buffer_size: 200
+distillation_reg_factor: 0.5
+replay_ce_factor: 0.5
