@@ -1,0 +1,5 @@
+_target_: clarena.cl_datasets.RotatedMNIST
+root: data/MNIST
+num_tasks: 5
+validation_percentage: 0.1
+batch_size: 128
