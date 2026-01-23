@@ -1,5 +1,5 @@
 _target_: clarena.cl_algorithms.CLPUDERpp
-buffer_size: 200
+buffer_size: 20
 distillation_reg_factor: 0.5
 replay_ce_factor: 0.5
 temporary_backbone_init_mode: from_main

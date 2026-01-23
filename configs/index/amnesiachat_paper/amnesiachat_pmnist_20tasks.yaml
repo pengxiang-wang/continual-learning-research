@@ -3,9 +3,9 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: amnesiachat_pmnist_5tasks
-train_tasks: 5
-eval_after_tasks: 5
+expr_name: amnesiachat_pmnist_20tasks
+train_tasks: 20
+eval_after_tasks: 20
 global_seed: 1
 
 # paradigm settings
@@ -14,6 +14,15 @@ unlearning_requests:
   2: [1]
   4: [2]
   5: [5]
+  7: [6]
+  9: [7]
+  10: [10]
+  12: [11]
+  14: [12]
+  15: [15]
+  17: [16]
+  19: [18]
+  20: [20]
 unlearnable_age: 3
 
 # components

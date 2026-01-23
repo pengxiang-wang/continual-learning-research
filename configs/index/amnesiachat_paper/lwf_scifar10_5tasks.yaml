@@ -3,7 +3,7 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: independent_smnist_5tasks
+expr_name: lwf_scifar10_5tasks
 train_tasks: 5
 eval_after_tasks: 5
 global_seed: 1
@@ -19,13 +19,13 @@ unlearnable_age: 3
 
 # components
 defaults:
-  - /cl_dataset: split_mnist.yaml
-  - /backbone: clmlp.yaml
-  - /cl_algorithm: unlearnable_independent.yaml
-  - /cul_algorithm: independent_unlearn.yaml
+  - /cl_dataset: split_cifar10.yaml
+  - /backbone: clresnet.yaml
+  - /cl_algorithm: amnesiac_lwf.yaml
+  - /cul_algorithm: amnesiac_lwf_unlearn.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: cpu.yaml
+  - /trainer: single_gpu.yaml
   - /metrics: cl_main_expr_default.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: cul_default.yaml
@@ -37,4 +37,4 @@ output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
 trainer: 
-  max_epochs: 2
+  max_epochs: 20

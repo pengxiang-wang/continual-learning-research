@@ -3,7 +3,7 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: amnesiachat_pmnist_5tasks
+expr_name: amnesiachat_scifar10_5tasks
 train_tasks: 5
 eval_after_tasks: 5
 global_seed: 1
@@ -18,13 +18,13 @@ unlearnable_age: 3
 
 # components
 defaults:
-  - /cl_dataset: permuted_mnist.yaml
-  - /backbone: amnesiachat_mlp.yaml
+  - /cl_dataset: split_cifar10.yaml
+  - /backbone: amnesiachat_resnet.yaml
   - /cl_algorithm: amnesiac_hat.yaml
   - /cul_algorithm: amnesiac_hat_unlearn.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: cpu.yaml
+  - /trainer: single_gpu.yaml
   - /metrics: cl_main_expr_default.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: cul_default.yaml
@@ -36,4 +36,4 @@ output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
 trainer: 
-  max_epochs: 2
+  max_epochs: 20
