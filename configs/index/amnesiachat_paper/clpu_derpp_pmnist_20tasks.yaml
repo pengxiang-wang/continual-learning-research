@@ -3,9 +3,9 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: independent_smnist_5tasks
-train_tasks: 5
-eval_after_tasks: 5
+expr_name: clpu_derpp_pmnist_20tasks
+train_tasks: 20
+eval_after_tasks: 20
 global_seed: 1
 
 # paradigm settings
@@ -14,15 +14,44 @@ unlearning_requests:
   2: [1]
   4: [2]
   5: [5]
-unlearnable_age: 3
+  7: [6]
+  9: [7]
+  10: [10]
+  12: [11]
+  14: [12]
+  15: [15]
+  17: [16]
+  19: [18]
+  20: [20]
+unlearnable_age: 
+  1: 3
+  2: 3
+  3: 0
+  4: 0
+  5: 3
+  6: 3
+  7: 3
+  8: 0
+  9: 0
+  10: 3
+  11: 3
+  12: 3
+  13: 0
+  14: 0
+  15: 3
+  16: 3
+  17: 3
+  18: 0
+  19: 0
+  20: 3
 
 
 # components
 defaults:
-  - /cl_dataset: split_mnist.yaml
+  - /cl_dataset: permuted_mnist.yaml
   - /backbone: clmlp.yaml
-  - /cl_algorithm: unlearnable_independent.yaml
-  - /cul_algorithm: independent_unlearn.yaml
+  - /cl_algorithm: clpu_derpp.yaml
+  - /cul_algorithm: clpu_derpp_unlearn.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml

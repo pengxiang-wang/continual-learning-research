@@ -3,7 +3,7 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: inpdendent_pmnist_5tasks
+expr_name: independent_pmnist_5tasks
 train_tasks: 5
 eval_after_tasks: 5
 global_seed: 1
