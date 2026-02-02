@@ -1,6 +1,6 @@
 defaults:
   - csv: default.yaml
-  - tensorboard: default.yaml
+  - tensorboard: null
   - comet: null
   - wandb: null
   - neptune: null

@@ -1,0 +1,88 @@
+_target_: clarena.cl_datasets.Combined
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 128
+datasets:
+  1: torchvision.datasets.CIFAR10
+  2: torchvision.datasets.CIFAR100
+  3: torchvision.datasets.MNIST
+  4: torchvision.datasets.SVHN
+  5: torchvision.datasets.FashionMNIST
+  6: clarena.stl_datasets.raw.TrafficSignsFromHAT
+  7: clarena.stl_datasets.raw.FaceScrubFromHAT
+  8: clarena.stl_datasets.raw.NotMNISTFromHAT
+  9: clarena.stl_datasets.raw.EMNISTDigits
+  10: clarena.stl_datasets.raw.EMNISTLetters
+  11: clarena.stl_datasets.raw.ArabicHandwrittenDigits
+  12: clarena.stl_datasets.raw.KannadaMNIST
+  13: clarena.stl_datasets.raw.SignLanguageMNIST
+  14: torchvision.datasets.KMNIST
+  15: torchvision.datasets.Food101
+  16: clarena.stl_datasets.raw.Linnaeus5_32
+  17: torchvision.datasets.Caltech101
+  18: torchvision.datasets.EuroSAT
+  19: torchvision.datasets.DTD
+  20: torchvision.datasets.Country211
+root:
+  1: data/CIFAR10
+  2: data/CIFAR100
+  3: data/MNIST
+  4: data/SVHN
+  5: data/FashionMNIST
+  6: data/TrafficSigns
+  7: data/FaceScrub
+  8: data/NotMNIST
+  9: data/EMNIST
+  10: data/EMNIST
+  11: data/ArabicHandwrittenDigits
+  12: data/KannadaMNIST
+  13: data/SignLanguageMNIST
+  14: data/KMNIST
+  15: data/Food101
+  16: data/Linnaeus5
+  17: data/Caltech101
+  18: data/EuroSAT
+  19: data/DTD
+  20: data/Country211
+resize:
+  1: null
+  2: null
+  3: [32, 32]
+  4: null
+  5: [32, 32]
+  6: null
+  7: [32, 32]
+  8: [32, 32]
+  9: [32, 32]
+  10: [32, 32]
+  11: [32, 32]
+  12: [32, 32]
+  13: [32, 32]
+  14: [32, 32]
+  15: [32, 32]
+  16: null
+  17: [32, 32]
+  18: [32, 32]
+  19: [32, 32]
+  20: [32, 32]
+repeat_channels:
+  1: null
+  2: null
+  3: 3
+  4: null
+  5: 3
+  6: null
+  7: null
+  8: 3
+  9: 3
+  10: 3
+  11: 3
+  12: 3
+  13: 3
+  14: 3
+  15: null
+  16: null
+  17: null
+  18: null
+  19: null
+  20: null

@@ -3,19 +3,19 @@
 
 # pipeline info
 pipeline: CL_MAIN_EXPR
-expr_name: finetuning
-train_tasks: 10
-eval_after_tasks: 10
+expr_name: finetuning_combined20_20tasks
+train_tasks: 20
+eval_after_tasks: 20
 global_seed: 1
 
 # paradigm settings
-cl_paradigm: DIL
+cl_paradigm: TIL
 
 # components
 defaults:
-  - /cl_dataset: permuted_mnist.yaml
+  - /cl_dataset: combined_20.yaml
+  - /backbone: clresnet.yaml
   - /cl_algorithm: finetuning.yaml
-  - /backbone: clmlp.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
@@ -30,11 +30,4 @@ output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
 trainer:
-  max_epochs: 2
-
-# cl_dataset:
-#   permutation_mode: all
-#   validation_percentage: 0.001
-
-# optimizer:
-#   lr: 0.2
+  max_epochs: 5
