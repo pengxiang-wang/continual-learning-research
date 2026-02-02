@@ -1,0 +1,37 @@
+# @package _global_
+# make sure to include the above commented global setting!
+
+# pipeline info
+pipeline: CL_MAIN_EXPR
+expr_name: hat_const_1_pmnist_50tasks
+train_tasks: 50
+eval_after_tasks: 50
+global_seed: 1
+
+# paradigm settings
+cl_paradigm: TIL
+
+# components
+defaults:
+  - /cl_dataset: permuted_mnist.yaml
+  - /backbone: hat_mlp.yaml
+  - /cl_algorithm: hat.yaml
+  - /optimizer: adam.yaml
+  - /lr_scheduler: reduce_lr_on_plateau.yaml
+  - /trainer: cpu.yaml
+  - /metrics: hat_default.yaml
+  - /lightning_loggers: default.yaml
+  - /callbacks: cl_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+# outputs
+output_dir: outputs/${expr_name}/${misc.timestamp}
+
+# overrides
+cl_dataset:
+  num_tasks: 50
+cl_algorithm:
+  adjustment_mode: hat_const_1
+trainer:
+  max_epochs: 2

@@ -3,9 +3,9 @@
 
 # pipeline info
 pipeline: CL_MAIN_EXPR
-expr_name: independent
-train_tasks: 10
-eval_after_tasks: 10 
+expr_name: fgadahat_ii_scifar100_20tasks
+train_tasks: 20
+eval_after_tasks: 20
 global_seed: 1
 
 # paradigm settings
@@ -13,13 +13,13 @@ cl_paradigm: TIL
 
 # components
 defaults:
-  - /cl_dataset: permuted_mnist.yaml
-  - /cl_algorithm: independent.yaml
-  - /backbone: clmlp.yaml
+  - /cl_dataset: split_cifar100.yaml
+  - /backbone: hat_resnet.yaml
+  - /cl_algorithm: fgadahat.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
-  - /metrics: cl_main_expr_default.yaml
+  - /metrics: hat_default.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: cl_default.yaml
   - /hydra: default.yaml
@@ -29,5 +29,9 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
+cl_algorithm:
+  importance_type: internal_influence_abs
+  adjustment_intensity: 1.5e-07
+  base_linear: 5
 trainer:
-  max_epochs: 2
+  max_epochs: 20

@@ -1,0 +1,3 @@
+_target_: clarena.cl_algorithms.LwF
+distillation_reg_factor: 1.0
+distillation_reg_temperature: 2.0
