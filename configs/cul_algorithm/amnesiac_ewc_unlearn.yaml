@@ -1,1 +1,2 @@
 _target_: clarena.cul_algorithms.AmnesiacEWCUnlearn
+if_unlearn_previous_network: true
