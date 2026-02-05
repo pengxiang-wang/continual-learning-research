@@ -3,5 +3,5 @@ buffer_size: 20
 distillation_reg_factor: 0.5
 replay_ce_factor: 0.5
 temporary_backbone_init_mode: from_main
-merge_iters: 500
+merge_num_steps: 500
 merge_batch_size: 32
