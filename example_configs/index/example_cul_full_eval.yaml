@@ -4,7 +4,7 @@
 # evaluation info
 pipeline: CUL_FULL_EVAL
 dd_eval_tasks: 5
-ad_eval_tasks: 5
+ag_eval_tasks: 5
 global_seed: 1
 
 # evaluation target
