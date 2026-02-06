@@ -3,7 +3,7 @@
   distribution_distance_type: euclidean
   distribution_distance_csv_name: dd.csv
   distribution_distance_plot_name: dd.png
-- _target_: clarena.metrics.CULAccuracyDifference
+- _target_: clarena.metrics.CULAccuracyGain
   save_dir: ${output_dir}/results/
-  accuracy_difference_csv_name: ad.csv
-  accuracy_difference_plot_name: ad.png
+  accuracy_gain_csv_name: ag.csv
+  accuracy_gain_plot_name: ag.png
