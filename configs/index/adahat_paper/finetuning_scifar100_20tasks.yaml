@@ -31,6 +31,6 @@ output_dir: outputs/${expr_name}/${misc.timestamp}
 # overrides
 trainer:
   max_epochs: 20
-  gradient_clip_val: 0.001
+  # gradient_clip_val: 0.001
 optimizer:
   weight_decay: 0.00035
