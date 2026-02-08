@@ -17,6 +17,9 @@ bash "$SCRIPT_DIR/main_study_pmnist_20tasks_til.sh"
 # -------------- main study: Split CIFAR-10, 5 tasks, TIL --------------
 bash "$SCRIPT_DIR/main_study_scifar10_5tasks_til.sh"
 
+# -------------- main study: Split CIFAR-100, 5 tasks, TIL --------------
+bash "$SCRIPT_DIR/main_study_scifar100_5tasks_til.sh"
+
 # -------------- main study: Split CIFAR-100, 20 tasks, TIL --------------
 bash "$SCRIPT_DIR/main_study_scifar100_20tasks_til.sh"
 
