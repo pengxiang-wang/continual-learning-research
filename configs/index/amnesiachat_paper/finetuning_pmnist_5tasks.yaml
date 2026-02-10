@@ -36,5 +36,5 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
-trainer: 
+trainer:  
   max_epochs: 2
