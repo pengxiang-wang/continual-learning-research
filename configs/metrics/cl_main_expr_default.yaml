@@ -8,4 +8,3 @@
   test_loss_cls_csv_name: loss_cls.csv
   test_loss_cls_matrix_plot_name: loss_cls_matrix.png
   test_ave_loss_cls_plot_name: ave_loss_cls.png
-
