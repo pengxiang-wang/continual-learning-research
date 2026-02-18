@@ -1,7 +1,7 @@
 # -------------- main study: Permuted MNIST, 5 tasks, DIL --------------
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
 
-for global_seed in {1..5}
+for global_seed in {2..5}
 do
 # Finetuning
 clarena pipeline=CUL_FULL_EXPR index=amnesiachat_paper/finetuning_pmnist_5tasks cl_paradigm=DIL output_dir=output_amnesiachat_paper/main_study/pmnist_5tasks_dil/finetuning/seed_${global_seed}/${timestamp} global_seed=${global_seed}

@@ -1,0 +1,26 @@
+# @package _global_
+# Common CUL full evaluation config for main_study re-eval (Euclidean DD)
+
+pipeline: CUL_FULL_EVAL
+dd_eval_tasks: 5
+ag_eval_tasks: 5
+global_seed: 1
+
+# evaluation target (override via CLI)
+main_model_path: outputs/placeholder/saved_models/cl_model.pth
+refretrain_model_path: outputs/placeholder/refretrain/saved_models/cl_model.pth
+reforiginal_model_path: outputs/placeholder/reforiginal/saved_models/cl_model.pth
+
+# paradigm settings (override via CLI)
+cl_paradigm: TIL
+
+defaults:
+  - /cl_dataset: permuted_mnist.yaml
+  - /trainer: cpu_eval.yaml
+  - /metrics: cul_full_eval_default.yaml
+  - /callbacks: eval_default.yaml
+  - /hydra: default.yaml
+  - /misc: default.yaml
+
+# outputs (override via CLI)
+output_dir: outputs/placeholder/eval

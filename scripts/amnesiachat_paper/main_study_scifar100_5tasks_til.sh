@@ -1,7 +1,7 @@
 # -------------- main study: Split CIFAR-100, 5 tasks, TIL --------------
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
 
-for global_seed in {1..5}
+for global_seed in {1..1}
 do
 # Independent
 clarena pipeline=CUL_FULL_EXPR index=amnesiachat_paper/independent_scifar100_5tasks cl_paradigm=TIL output_dir=output_amnesiachat_paper/main_study/scifar100_5tasks_til/independent/seed_${global_seed}/${timestamp} global_seed=${global_seed}

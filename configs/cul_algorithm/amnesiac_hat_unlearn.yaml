@@ -2,6 +2,6 @@ _target_: clarena.cul_algorithms.AmnesiacHATUnlearn
 if_backup_compensation: true
 compensate_order: normal
 if_replay_repairing: true
-repair_batch_size: 64
-repair_num_steps: 50
+repair_batch_size: 200
+repair_num_steps: 500
 repair_strategy: joint

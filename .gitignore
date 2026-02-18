@@ -9,7 +9,8 @@ outputs/
 outputs_critical/
 outputs_to_be_saved/
 output_amnesiachat_paper/
-
+output_adahat_paper/
+lightning_logs/
 
 # others
 .DS_Store
