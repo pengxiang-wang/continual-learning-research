@@ -11,6 +11,7 @@ outputs_to_be_saved/
 output_amnesiachat_paper/
 output_adahat_paper/
 lightning_logs/
+./output_amnesiachat_paper.zip
 
 # others
 .DS_Store
