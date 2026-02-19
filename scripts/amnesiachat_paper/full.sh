@@ -30,7 +30,7 @@ bash "$SCRIPT_DIR/main_study_pmnist_5tasks_dil.sh"
 bash "$SCRIPT_DIR/main_study_rmnist_5tasks_dil.sh"
 
 # # -------------- ablation study: Permuted MNIST, 5 tasks, TIL --------------
-bash "$SCRIPT_DIR/ablation_study_pmnist_5tasks_til.sh"
+# bash "$SCRIPT_DIR/ablation_study_pmnist_5tasks_til.sh"
 
 # # -------------- hyperparameter study --------------
 # bash "$SCRIPT_DIR/hyperparameter_study.sh"
