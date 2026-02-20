@@ -23,7 +23,7 @@ unlearning_requests:
   17: [16]
   19: [18]
   20: [20]
-unlearnable_age: 3
+unlearnable_age: 4
 
 # components
 defaults:
