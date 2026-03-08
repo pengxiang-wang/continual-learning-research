@@ -3,9 +3,9 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: finetuning_scifar100_20tasks
-train_tasks: 20
-eval_after_tasks: 20
+expr_name: derpp_combined_simple_5tasks
+train_tasks: 5
+eval_after_tasks: 5
 global_seed: 1
 
 # paradigm settings
@@ -14,27 +14,17 @@ unlearning_requests:
   2: [1]
   4: [2]
   5: [5]
-  7: [6]
-  9: [7]
-  10: [10]
-  12: [11]
-  14: [12]
-  15: [15]
-  17: [16]
-  19: [18]
-  20: [20]
-unlearnable_age: 4
-
+unlearnable_age: 3
 
 # components
 defaults:
-  - /cl_dataset: split_cifar100.yaml
-  - /backbone: clresnet.yaml
-  - /cl_algorithm: amnesiac_finetuning.yaml
-  - /cul_algorithm: amnesiac_finetuning_unlearn.yaml
+  - /cl_dataset: combined_simple_5.yaml
+  - /backbone: clmlp.yaml
+  - /cl_algorithm: amnesiac_derpp.yaml
+  - /cul_algorithm: amnesiac_derpp_unlearn.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
-  - /trainer: single_gpu.yaml
+  - /trainer: cpu.yaml
   - /metrics: cl_main_expr_default.yaml
   - /lightning_loggers: default.yaml
   - /callbacks: cul_default.yaml
@@ -45,8 +35,5 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
-trainer: 
-  max_epochs: 20
-
-cl_algorithm:
-  batch_normalization: False # Must be false otherwise update deletion will cause loss explode and NaN
+trainer:
+  max_epochs: 2
