@@ -40,7 +40,10 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
+<<<<<<< HEAD
 backbone:
   batch_normalization: false
+=======
+>>>>>>> f2cb33d6be8f335f19bb2ee27f6cf79acab0edae
 trainer:
   max_epochs: 2

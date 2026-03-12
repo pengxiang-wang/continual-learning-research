@@ -7,10 +7,18 @@ datasets:
   2: clarena.stl_datasets.raw.NotMNIST
   3: torchvision.datasets.FashionMNIST
   4: torchvision.datasets.KMNIST
+<<<<<<< HEAD
   5: clarena.stl_datasets.raw.KannadaMNIST
+=======
+  5: clarena.stl_datasets.raw.SignLanguageMNIST
+>>>>>>> f2cb33d6be8f335f19bb2ee27f6cf79acab0edae
 root:
   1: data/MNIST
   2: data/NotMNIST
   3: data/FashionMNIST
   4: data/KMNIST
+<<<<<<< HEAD
   5: data/KannadaMNIST
+=======
+  5: data/SignLanguageMNIST
+>>>>>>> f2cb33d6be8f335f19bb2ee27f6cf79acab0edae

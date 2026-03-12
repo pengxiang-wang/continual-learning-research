@@ -49,3 +49,6 @@ backbone:
   batch_normalization: false
 trainer: 
   max_epochs: 20
+
+cl_algorithm:
+  batch_normalization: False # Must be false otherwise update deletion will cause loss explode and NaN

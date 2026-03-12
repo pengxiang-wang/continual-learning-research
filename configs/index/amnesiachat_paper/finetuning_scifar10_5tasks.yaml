@@ -14,7 +14,7 @@ unlearning_requests:
   2: [1]
   4: [2]
   5: [5]
-unlearnable_age: 3
+unlearnable_age: 4
 
 
 # components
@@ -40,3 +40,6 @@ backbone:
   batch_normalization: False
 trainer: 
   max_epochs: 20
+
+cl_algorithm:
+  batch_normalization: False # Must be false otherwise update deletion will cause loss explode and NaN
