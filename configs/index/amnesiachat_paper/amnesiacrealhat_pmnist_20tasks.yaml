@@ -3,9 +3,9 @@
 
 # pipeline info
 pipeline: CUL_MAIN_EXPR
-expr_name: independent_rmnist_5tasks
-train_tasks: 5
-eval_after_tasks: 5
+expr_name: amnesiachat_pmnist_20tasks
+train_tasks: 20
+eval_after_tasks: 20
 global_seed: 1
 
 # paradigm settings
@@ -14,15 +14,23 @@ unlearning_requests:
   2: [1]
   4: [2]
   5: [5]
-unlearnable_age: 3
-
+  7: [6]
+  9: [7]
+  10: [10]
+  12: [11]
+  14: [12]
+  15: [15]
+  17: [16]
+  19: [17]
+  20: [20]
+unlearnable_age: 4
 
 # components
 defaults:
-  - /cl_dataset: rotated_mnist.yaml
-  - /backbone: clmlp.yaml
-  - /cl_algorithm: unlearnable_independent.yaml
-  - /cul_algorithm: independent_unlearn.yaml
+  - /cl_dataset: permuted_mnist.yaml
+  - /backbone: amnesiachat_mlp.yaml
+  - /cl_algorithm: amnesiac_hat.yaml
+  - /cul_algorithm: amnesiac_hat_unlearn.yaml
   - /optimizer: adam.yaml
   - /lr_scheduler: reduce_lr_on_plateau.yaml
   - /trainer: cpu.yaml
@@ -38,5 +46,12 @@ output_dir: outputs/${expr_name}/${misc.timestamp}
 # overrides
 backbone:
   batch_normalization: false
+
 trainer: 
   max_epochs: 2
+
+cl_algorithm:
+  architecture: HAT
+  adjustment_mode: hat
+
+

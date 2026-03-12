@@ -1,0 +1,16 @@
+_target_: clarena.cl_datasets.Combined
+validation_percentage: 0.1
+test_percentage: 0.1
+batch_size: 128
+datasets:
+  1: torchvision.datasets.MNIST
+  2: clarena.stl_datasets.raw.NotMNIST
+  3: torchvision.datasets.FashionMNIST
+  4: torchvision.datasets.KMNIST
+  5: clarena.stl_datasets.raw.KannadaMNIST
+root:
+  1: data/MNIST
+  2: data/NotMNIST
+  3: data/FashionMNIST
+  4: data/KMNIST
+  5: data/KannadaMNIST

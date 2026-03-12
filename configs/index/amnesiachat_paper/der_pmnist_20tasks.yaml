@@ -21,10 +21,9 @@ unlearning_requests:
   14: [12]
   15: [15]
   17: [16]
-  19: [18]
+  19: [17]
   20: [20]
-unlearnable_age: 3
-
+unlearnable_age: 4
 
 # components
 defaults:
@@ -45,5 +44,7 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
+backbone:
+  batch_normalization: false
 trainer: 
   max_epochs: 2

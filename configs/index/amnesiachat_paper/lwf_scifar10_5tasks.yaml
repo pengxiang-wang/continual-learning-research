@@ -36,5 +36,9 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
+distillation_reg_factor: 0.01
+distillation_reg_temperature: 0.1
+backbone: 
+  batch_normalization: False
 trainer: 
   max_epochs: 20

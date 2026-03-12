@@ -10,3 +10,4 @@ mask_sparsity_reg_factor: 0.1
 mask_sparsity_reg_mode: "original"
 task_embedding_init_mode: "N01"
 epsilon: 0.1
+backup_init_mode: delete
