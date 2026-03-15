@@ -1,5 +1,5 @@
 _target_: clarena.cl_algorithms.AmnesiacHAT
-buffer_size: 64
+buffer_size: 200
 distillation_reg_factor: 0.5
 replay_ce_factor: 0.5
 adjustment_mode: adahat
@@ -10,3 +10,4 @@ mask_sparsity_reg_factor: 0.1
 mask_sparsity_reg_mode: "original"
 task_embedding_init_mode: "N01"
 epsilon: 0.1
+backup_init_mode: delete
