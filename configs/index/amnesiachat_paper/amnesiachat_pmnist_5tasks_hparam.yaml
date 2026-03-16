@@ -35,5 +35,9 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
+backbone:
+  batch_normalization: false
+cl_algorithm: 
+  backup_init_mode: delete
 trainer:
   max_epochs: 2

@@ -44,5 +44,8 @@ defaults:
 output_dir: outputs/${expr_name}/${misc.timestamp}
 
 # overrides
+backbone:
+  batch_normalization: false
+
 trainer: 
   max_epochs: 2

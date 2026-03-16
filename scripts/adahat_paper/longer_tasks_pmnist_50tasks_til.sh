@@ -20,13 +20,3 @@ clarena pipeline=CL_MAIN_EXPR index=adahat_paper/hat_const_1_pmnist_50tasks cl_p
 # AdaHAT
 clarena pipeline=CL_MAIN_EXPR index=adahat_paper/adahat_pmnist_50tasks cl_paradigm=TIL output_dir=output_adahat_paper/longer_tasks/pmnist_50tasks_til/adahat/seed_${global_seed}/${timestamp} global_seed=${global_seed}
 done
-
-
-
-for global_seed in {1..5}
-do
-# DER
-clarena pipeline=CL_MAIN_EXPR index=adahat_paper/der_pmnist_50tasks cl_paradigm=TIL output_dir=output_adahat_paper/longer_tasks/pmnist_50tasks_til/der/seed_${global_seed}/${timestamp} global_seed=${global_seed}
-# DER++
-clarena pipeline=CL_MAIN_EXPR index=adahat_paper/derpp_pmnist_50tasks cl_paradigm=TIL output_dir=output_adahat_paper/longer_tasks/pmnist_50tasks_til/derpp/seed_${global_seed}/${timestamp} global_seed=${global_seed}
-done

@@ -20,3 +20,5 @@ clarena pipeline=CUL_FULL_EXPR index=amnesiachat_paper/clpu_derpp_pmnist_20tasks
 # AmnesiacHAT
 clarena pipeline=CUL_FULL_EXPR index=amnesiachat_paper/amnesiachat_pmnist_20tasks cl_paradigm=TIL output_dir=output_amnesiachat_paper/main_study/pmnist_20tasks_til/amnesiachat/seed_${global_seed}/${timestamp} global_seed=${global_seed}
 done
+
+
